@@ -1,13 +1,9 @@
-/*! 
- *Zen. Design.
- *Specially for bbs.sjtu.edu.cn
- *
- *Cpoyright 2013 Zen.
- *Licensed under the Apache License v2.0
- *http://izeng.me
- */
- 
- /* @group Basic Style */
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+
+
  ul, ol {
      padding: 0;
      margin: 0 0 10px 25px
@@ -24,128 +20,104 @@
  li {
      line-height: 20px
  }
+ 
+ /* @group Sidebar */
+ .sidebar {
+     background-color: #424b7a;
+     height: 769px;
+ }
+ .sidebar-inner {
+     background-color: #424b7a;
+ }
+ .nav-collapse {
+   top: 2em;
+   left: 0;
+ }
+ 
+ .nav-collapse ul {
+   display: block;
+   list-style: none;
+ }
+ 
+ .nav-collapse li {
+   display: block;
+ }
+ 
+ .nav-collapse a {
+   background-color: #424b7a;
+   color: white;
+   font-weight: bold;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   -webkit-transition: background .3s ease;
+   -moz-transition: background .3s ease;
+   transition: background .3s ease;
+   text-shadow: 0 -1px rgba(0,0,0, .5);
+   border-bottom: 1px solid rgba(0,0,0, .2);
+   border-top: 1px solid rgba(255,255,255, .1);
+   display: block;
+   padding: .6em 2em;
+   width: 100%;
+ }
+ 
+ .nav-collapse a:hover { background: rgba(255,255,255, .1) }
+ .nav-collapse .active a { color: #fff; background: rgba(0,0,0, .3) }
+ .nav-collapse li:first-child a { border-top: 0 }
+ .nav-collapse li:last-child a { border-bottom: 0 }
+ .nav-toggle { display: none }
+ 
  /* @end */
  
- /* @group Body Style */
  
-body {
+ /* @group Responsive Design for <md */
  
-}
-
-/* @end */
-
-/* @group Header Style */
-
-
-
-/* @end */
-
-/* @group Main Style */
-.cell {
-    display: block;
-    padding: 20px;
-    border-bottom: 1px solid #dadada;
-    position: relative;
-}
-/* @group Avatar */
-.avatar {
-    width: 35px;
-    height: 35px;
-    background-color: #eee;
-    padding: 1px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
-    border-radius: 3px
-}
-.avatar.small {
-    width: 20px;
-    height: 20px
-}
-.avatar.medium {
-    width: 50px;
-    height: 50px
-}
-.avatar.large {
-    width: 140px;
-    height: 140px
-}
-.avatar.border {
-    border: 3px solid white;
-    -webkit-box-shadow: 0 0 2px #999, 0 0 0 rgba(0, 0, 0, 0);
-    -moz-box-shadow: 0 0 2px #999, 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: 0 0 2px #999, 0 0 0 rgba(0, 0, 0, 0)
-}
-.avatar img {
-    width: 100%;
-    border-radius: 3px
-}
-/* @end */
-
-.post-wrapper {
-    list-style: none;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border: 1px solid #d2d2d2;
-    background-color: white;
-    border-radius: 3px;
-}
-.post-wrapper .post-info {
-    background-color: #fafafa;
-    padding: 15px;
-    position: relative;
-    display: block;
-    border-bottom: 1px solid #d2d2d2;
-}
-.post-wrapper .icon-conner-pinned {
+ @media screen and (max-width: 992px) {
+ 
+ .sidebar {
+     height: 0;
+ }
+.js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
     position: absolute;
-    top: -1px;
-    left: -1px;
-    display: inline-block;
-    vertical-align: text-top;
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    background-image:
-}
-.post-wrapper .post-avatar {
-    float: left;
-    position: relative;
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
+    display: block;
     overflow: hidden;
-}
-.post-wrapper .post-meta {
+  }
+  .nav-collapse {
+    top: 0;
+    width: 100%;
     position: relative;
+  }
+  .nav-collapse.opened { max-height: 9999px }
+  .nav-collapse a:hover { background: transparent }
+  .nav-collapse .active a:hover { color: #fff; background: rgba(0,0,0, .3) }
+  .nav-toggle {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 70px;
+    height: 55px;
+    float: right;
+    display: block;
+    margin: 0 -2em 1em 0;
+    text-indent: -9999px;
     overflow: hidden;
-    margin-right: 30px;
-    
-}
-.post-wrapper h3 {
-    margin-top: 0px;
-}
-.post-wrapper .post-title {
-    font-size: 15px;
-}
-.post-wrapper .post-timestamp {
-    font-size: 13px;
-    color: #969696;
-}
-
-/* @group Right Sidebar */
-.right-sidebar-container {
-    border-left: 1px solid #d2d2d2;
+    background: #444 url("../img/hamburger.gif") no-repeat 50% 33%;
+  }
+  .main {
+    -webkit-overflow-scrolling: auto;
+    box-shadow: none;
+    padding: 0 2em 2em;
+    border-radius: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .main::-webkit-scrollbar { background-color: transparent }
 }
 
 
-/* @end */
-
-/* @end */
-
-/* @group Untitled Group */
-
-
-
-/* @end */
+ /* @end */
