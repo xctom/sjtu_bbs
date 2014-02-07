@@ -47,7 +47,6 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#">返回讨论列表</a></li>
                             <li class="active"><a  href="#main" data-toggle="tab">正文</a></li>
-                            <li><a href="#message" data-toggle="tab">查看留言</a> </li>
                             <li><a href="#reply" data-toggle="tab">回复</a></li>
                         </ul>
                     
@@ -68,7 +67,7 @@
                     </nav>
                 </div>
         </header>
-        
+ 
         <div class="bbs-header" id="headline">
             <div class="container">
                 <h3>腾讯是如何一刀刀，在15年间干死那些竞争对手的</h3>
@@ -76,8 +75,9 @@
                 <p>发信人: <a href="#">sunnyrose</a>, 信区: <a href="#">SJTUNews</a></p>        
             </div>
         </div>
-        
+
         <div class="container tab-content">
+
             <div class="row main-body fade in tab-pane active" id="main">
                 <h1>Welcome to the TinyMCE editor demo!</h1>
                 <p>Feel free to try out the different features that are provided, please note that the&nbsp;<strong>MoxieManager</strong>&nbsp;specific functionality is part of our commercial offering. The demo is to show the integration.</p>
@@ -107,9 +107,7 @@
                 </table>
                 <p>Enjoy our software and create great content!</p>
                 <p>Oh, and by the way, don't forget to check out our other product called&nbsp;<a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution with HTML5 upload support!</p>
-            </div>
-
-            <div class="main-body fade tab-pane row" id="message">
+ 
 
                 <div class="message-wrapper">
                     <div class="panel panel-default">
@@ -145,7 +143,7 @@
                 <div class="message-wrapper">
                     <div class="panel panel-default">
                         <div class="row message-body">
-                            <div class="col-sm-6 col-md-2 thumbnail-wrapper">
+                            <div class="col-xs-6 col-sm-2 thumbnail-wrapper">
                                 <a href="#" class="thumbnail img-responsive" alt="Responsive image">
                                     <img src="img/icons/png/chat.png">
                                 </a>
@@ -153,7 +151,7 @@
                                     <p class="text-center"><small>my name</small></p>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-10">
+                            <div class="col-xs-6 col-sm-10">
                                 <div class="quote row well well-sm">
                                     <p>这人一定是冯小刚的马甲！！</p>
                                     <em><small>引用自用户<strong>啦啦啦</strong></small></em>
@@ -177,6 +175,7 @@
                         <textarea id="reply-content" name="content" style="width:100%"></textarea>
                     </form>
                 </div>
+                <button class="btn btn-info btn-md">submit</button>
             </div>
         </div>
 

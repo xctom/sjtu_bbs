@@ -1,3 +1,7 @@
+body{
+background-color: #f3f3f3;    
+}
+
 .bbs-masthead {
 position: relative;
 padding: 30px 15px;
@@ -47,16 +51,40 @@ font-style: normal;
 }
 
 .top-ten{
-padding: 30px 0px 30px 0px;
-
+margin-top: 50px;
+width: 100%;
+border-bottom: #BBB 1px solid;
 }
 
+.top-ten .row{
+background-color: #EEE;
+}
+
+/*.top-ten .row:hover{
+-webkit-transform: translate3d(0,-2px,0);
+-moz-transform: translate3d(0,-2px,0);
+transform: translate3d(0,-2px,0);
+transition: all 0.6s ease-out;
+-webkit-transition: all 0.6s ease-out;
+-moz-transition: all 0.6s ease-out;
+-webkit-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1),1px 1px 15px 2px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1),1px 1px 15px 2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1),1px 1px 15px 2px rgba(0, 0, 0, 0.2);
+}
+*/
 .forum-name{
 font: 6.5rem/1 "norwester";
 text-transform: uppercase;
 -webkit-font-smoothing: antialiased;
-padding: 40px 80px;
-background-color: #f1f1f1;
+padding: 45px 80px;
+color:white;
+}
+
+.forum-name:hover{
+filter:alpha(opacity=90);
+-moz-opacity:0.9;
+-khtml-opacity: 0.9;
+opacity: 0.9;
 }
 
 .diver{
@@ -64,9 +92,60 @@ margin: 0;
 }
 
 .top-ten-body{
-padding: 0px 30px;
+padding: 12px 30px;
+font-size: 16px;
+}
+
+.top-ten-body-light{
+background-color: #f3f3f3;
 }
 
 .top-ten-heading{
 margin-top: 5px;
+cursor: pointer;
+}
+
+/*十大讨论区配色*/
+.forum-name-dark-red{
+background-color: #C0392B;
+}
+
+.forum-name-light-red{
+background-color: #E74C3C;
+}
+
+.forum-name-dark-orange{
+background-color: #E67E22;
+}
+
+.forum-name-light-orange{
+background-color: #F39C12;
+}
+
+.forum-name-yellow{
+background-color: #F1C40F;
+}
+
+.forum-name-light-green{
+background-color: #2ECC71;
+}
+
+.forum-name-middle-green{
+background-color: #1ABC9C;
+}
+
+.forum-name-dark-green{
+background-color: #16A085;
+}
+
+.forum-name-light-blue{
+background-color: #3498DB;
+}
+
+.forum-name-dark-blue{
+background-color: #2980B9;
+}
+
+footer{
+padding: 10px 0px 10px 0px;
 }
