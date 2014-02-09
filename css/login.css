@@ -21,8 +21,8 @@ border-color: #cdbfe3;
 
 .bbs-masthead {
 text-align: left;
-padding-top: 140px;
-padding-bottom: 181px;
+padding-top: 108px;
+padding-bottom: 155px;
 background-size: 100% 100%;
 }
 
@@ -36,5 +36,22 @@ font-size: 21px;
 }
 
 .lead{
-font-size: 22px;
+font-size: 24px;
+font-weight: bold;
+}
+
+img.logo{
+height: 170px;
+}
+
+div.wrapper{
+padding-left: 0px;
+}
+
+@media (min-width: 768px){
+
+div.wrapper{
+padding-left: 45px;
+}
+
 }
