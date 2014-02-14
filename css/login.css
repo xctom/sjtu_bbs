@@ -1,0 +1,57 @@
+.bbs-masthead {
+position: relative;
+padding: 30px 15px;
+text-align: center;
+text-shadow: 0 1px 0 rgba(0,0,0,.15);
+background: url(../img/welcome.jpg) no-repeat;
+
+}
+
+.bbs-masthead .btn-outline-inverse {
+margin: 10px;
+}
+
+.bbtn-outline-inverse {
+color: #fff;
+background-color: transparent;
+border-color: #cdbfe3;
+}
+
+@media (min-width: 768px){
+
+.bbs-masthead {
+text-align: left;
+padding-top: 108px;
+padding-bottom: 155px;
+background-size: 100% 100%;
+}
+
+.bbs-masthead .btn-outline-inverse {
+width: auto;
+margin: 20px 5px 20px 0;
+padding: 18px 24px;
+font-size: 21px;
+}
+
+}
+
+.lead{
+font-size: 24px;
+font-weight: bold;
+}
+
+img.logo{
+height: 170px;
+}
+
+div.wrapper{
+padding-left: 0px;
+}
+
+@media (min-width: 768px){
+
+div.wrapper{
+padding-left: 45px;
+}
+
+}
