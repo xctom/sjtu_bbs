@@ -1,0 +1,31 @@
+.thread-content{
+margin-top: 50px;
+}
+
+.thread-name{
+padding: 20px 20px;
+font-family:"norwester";
+font-size: 80px;
+}
+
+a.user-name{
+color:#428bca;
+}
+
+a.user-name:hover{
+color:#3498DB;
+}
+
+.badge{
+background-color: #2f4154;
+}
+
+.disabled{
+cursor:default;
+color:white;
+}
+
+
+body{
+background: url(../img/thread_back.jpg) no-repeat;
+}

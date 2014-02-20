@@ -62,3 +62,19 @@ margin:25px 5px 10px 5px;
 div#headline{
 padding-bottom: 0px;
 }
+
+.pager{
+width: 100%;
+background-color: transparent;
+}
+
+.pager li > a{
+color: #2c3e50;
+border-radius: 0px !important;
+padding: 15px 30px;
+border: 0px;
+}
+
+.pager li > a:hover{
+color: white;
+}
