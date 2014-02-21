@@ -9,7 +9,7 @@ font-style: normal;
 }
 
 body{
-background-color: #f3f3f3;    
+background: url(../img/back.jpg) no-repeat;
 }
 
 a#right-menu{

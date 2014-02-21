@@ -106,48 +106,19 @@ padding: 10px 0px 10px 0px;
 
 /*讨论区*/
 
-.packery {
-background: #f3f3f3;
-max-width: 100%;
+div#boards {
+background: transparent;
 margin-top: 80px;
+width: 100%;
 }
 
-/* clearfix */
-.packery:after {
-content: ' ';
-display: block;
-clear: both;
-}
-
-.packery h4{
-cursor: pointer;
+.thread-name{
+font-family:"norwester";   
 text-align: center;
-margin-top: 0px;
+vertical-align: middle !important;
+text-transform: uppercase;
 }
 
-.item {
-width: 150px;
-height: 150px;
-float: left;
-border: 4px solid #333;
-border-color: hsla(0, 0%, 0%, 0.3);
-font: 3.5rem/1 "norwester";
-color: white;
-}
-
-.item:hover {
-border-color: white;
-cursor: move;
-}
-
-.item.w2 { width: 175px;}
-.item.h2 { height: 175px;}
-.item.h4 { height: 355px;}
-.item.w4 { width:  355px;}
-
-.item.is-dragging,
-.item.is-positioning-post-drag {
-border-color: white;
-background: #09F;
-z-index: 2;
+.panel-heading{
+font-weight: bold;
 }
