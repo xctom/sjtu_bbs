@@ -9,7 +9,8 @@ font-style: normal;
 }
 
 body{
-background: url(../img/back.jpg) no-repeat;
+background: url(../img/background-blur.jpg) no-repeat ;
+background-attachment:fixed;
 }
 
 a#right-menu{

@@ -1,3 +1,7 @@
+body{
+background: #f4f4f4;
+}
+
 .bbs-header{
 background-image:url(../img/header-back.png);
 padding: 30px 15px 20px;
