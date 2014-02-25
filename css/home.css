@@ -112,13 +112,9 @@ margin-top: 80px;
 width: 100%;
 }
 
-.thread-name{
-font-family:"norwester";   
-text-align: center;
-vertical-align: middle !important;
-text-transform: uppercase;
+.item {
+width: 25%; 
+background: gray;
+border: solid 1px black;
 }
-
-.panel-heading{
-font-weight: bold;
-}
+.item.w2 { width: 50%; }
