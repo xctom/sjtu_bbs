@@ -28,25 +28,45 @@ $(document).ready(function(){
       });
     })(jQuery);
 
-    var $container = $('#boards');
+    var $container = $('#masonary');
+    var color_list=["#C0392B",
+                    "#E74C3C",
+                    "#E67E22",
+                    "#F39C12",
+                    "#F1C40F",
+                    "#2ECC71",
+                    "#1ABC9C",
+                    "#16A085",
+                    "#3498DB",
+                    "#2980B9"];
 
+    $("div#masonary>.item").each(function(){
+      $(this).css("background-color",color_list[parseInt(Math.random()*10)]);
+    });
 
     var isOption={
         // options
         itemSelector: '.item',
-        layoutMode: 'cellsByRow',
-        cellsByRow: {
-            columnWidth: 400,
-            rowHeight: 400
+        masonry: {
+          columnWidth: 200,
+          gutter: 5
+        },
+        getSortData: {
+          board: function(item){
+            var board = $(item).find(".board-number").text();
+            return parseInt(board);
+          }
         }
     };
     
     // init
-    $("div#boards").onShow(function(){
-        $container.isotope(isOption);
+    $("div#masonary").onShow(function(){
+      $container.isotope(isOption);
     });
     
-
+    $("#sort-by-board").click(function(){
+      $container.isotope({ sortBy: 'board' });
+    });
 
 
 });

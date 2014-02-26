@@ -110,11 +110,45 @@ div#boards {
 background: transparent;
 margin-top: 80px;
 width: 100%;
+margin-left: 50px;
+}
+
+div#boards *{
+color:white;
 }
 
 .item {
-width: 25%; 
+width: 200px;
 background: gray;
-border: solid 1px black;
+border-radius: 5px;
+margin-bottom: 5px;
 }
-.item.w2 { width: 50%; }
+
+.item p{
+padding-left: 5px;
+padding-right: 5px; 
+font-family: "norwester";
+font-weight: bold;
+font-size: 20px;
+margin-bottom: 0px;
+line-height: 1.5;
+}
+
+p.item-title{
+padding-bottom: 30px; 
+font-family: "微软雅黑";
+}
+
+.item-forum-name{
+position: absolute;
+width: 100%;
+bottom: 0px;
+padding: 0px 3px;
+border-radius: 0px 0px 5px 5px;
+background-color: rgba(0,0,0,0.1);
+text-transform: uppercase;
+}
+
+.btn-toolbar{
+padding-bottom: 10px;
+}
