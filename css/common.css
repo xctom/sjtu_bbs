@@ -110,3 +110,7 @@ display: none;
     from { opacity: 1; }
       to { opacity: 0; }
 }
+
+footer{
+padding: 10px 0px 10px 0px;
+}

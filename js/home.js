@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   
+    
     /*define onshow*/   
     (function($){
       $.fn.extend({ 
@@ -68,5 +68,19 @@ $(document).ready(function(){
       $container.isotope({ sortBy: 'board' });
     });
 
+    // filter items on button click
+    $('#filters').on( 'click', 'a', function( event ) {
+      var filterValue = parseInt($(this).text()[0]);
+
+      // use filter function if value matches
+      $container.isotope({ filter: function(){
+        if(!isNaN(filterValue)){
+            var board = $(this).find(".board-number").text();
+            return parseInt(board) == filterValue;
+        }else{
+            return true;
+        }
+      }});
+    });
 
 });
