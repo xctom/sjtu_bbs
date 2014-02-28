@@ -122,11 +122,19 @@ div#boards *{
 color:white;
 }
 
-.item {
-width: 200px;
+.item{
+width: 170px;
 background: gray;
 border-radius: 5px;
 margin-bottom: 5px;
+}
+
+@media (min-width: 768px){
+    
+    .item {
+    width: 200px;
+    }
+
 }
 
 .item p{
