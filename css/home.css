@@ -101,6 +101,11 @@ background-color: #2980B9;
 }
 
 /*讨论区*/
+button.filter{
+margin-bottom: 10px;
+margin-left: 5px !important;
+}
+
 .filter-menu{
 background-color: #3498DB;
 padding: 5px;
@@ -123,7 +128,7 @@ color:white;
 }
 
 .item{
-width: 170px;
+width: 150px;
 background: gray;
 border-radius: 5px;
 margin-bottom: 5px;

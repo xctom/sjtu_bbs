@@ -44,11 +44,13 @@ $(document).ready(function(){
       $(this).css("background-color",color_list[parseInt(Math.random()*10)]);
     });
 
+    var col_width = (window.outerWidth < 768 )? 150:200;
+
     var isOption={
         // options
         itemSelector: '.item',
         masonry: {
-          columnWidth: 200,
+          columnWidth: col_width,
           gutter: 5
         },
         getSortData: {
