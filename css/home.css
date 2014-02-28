@@ -100,17 +100,22 @@ background-color: #3498DB;
 background-color: #2980B9;
 }
 
-footer{
-padding: 10px 0px 10px 0px;
+/*讨论区*/
+.filter-menu{
+background-color: #3498DB;
+padding: 5px;
+min-width: 100px;
 }
 
-/*讨论区*/
+.filter-menu li > a:hover, .filter-menu li > a:active, .filter-menu li > a:focus {
+background: #2980B9;
+}
 
 div#boards {
 background: transparent;
 margin-top: 80px;
 width: 100%;
-margin-left: 50px;
+margin-left: 25px;
 }
 
 div#boards *{
@@ -152,3 +157,4 @@ text-transform: uppercase;
 .btn-toolbar{
 padding-bottom: 10px;
 }
+
