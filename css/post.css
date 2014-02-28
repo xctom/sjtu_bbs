@@ -56,6 +56,19 @@ font-size: 14px;
 
 a.thumbnail{
 margin-bottom: 0px;
+border: 0px;
+}
+
+a.thumbnail img{
+height: 80px;
+}
+
+@media (min-width: 768px){
+
+a.thumbnail img{
+height: auto;
+}
+
 }
 
 .message-content{
