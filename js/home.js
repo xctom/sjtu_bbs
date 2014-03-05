@@ -1,5 +1,6 @@
 $(document).ready(function(){
     
+    /*define onshow*/   
     (function($){
       $.fn.extend({ 
         onShow: function(callback, unbind){
@@ -27,40 +28,61 @@ $(document).ready(function(){
       });
     })(jQuery);
 
+    var $container = $('#masonary');
+    var color_list=["#C0392B",
+                    "#E74C3C",
+                    "#E67E22",
+                    "#F39C12",
+                    "#F1C40F",
+                    "#2ECC71",
+                    "#1ABC9C",
+                    "#16A085",
+                    "#3498DB",
+                    "#2980B9"];
 
-    // http://packery.metafizzy.co/packery.pkgd.js and 
-    // http://draggabilly.desandro.com/draggabilly.pkgd.js added as external resource
-
-    docReady( function() {
-        var container = document.querySelector('.packery');
-        pckry = new Packery( container, {
-            columnWidth: 60,
-            rowHeight: 60
-        });
-        var itemElems = pckry.getItemElements();
-        var colors = ["#16A085","#27AE60","#2980B9","#8E44AD","#F39C12","#D35400","#C0392B"];
-        // for each item element
-        for ( var i=0, len = itemElems.length; i < len; i++ ) {
-            var elem = itemElems[i];
-            elem.style.backgroundColor = colors[parseInt(Math.random() * 7)];
-            // make element draggable with Draggabilly
-            var draggie = new Draggabilly( elem );
-            // bind Draggabilly events to Packery
-            pckry.bindDraggabillyEvents( draggie );
-        }
-
-        $("div.packery").onShow(function(){
-            pckry.resize();
-        });
-
-        // $("a#pckry-resize").click(function(){
-        //     if($(container).css("display")=="none"){
-        //         pckry.resize();
-        //     }
-
-        // })
+    $("div#masonary>.item").each(function(){
+      $(this).css("background-color",color_list[parseInt(Math.random()*10)]);
     });
 
+    var col_width = (window.outerWidth < 768 )? 150:200;
 
+    var isOption={
+        // options
+        itemSelector: '.item',
+        masonry: {
+          columnWidth: col_width,
+          gutter: 5
+        },
+        getSortData: {
+          board: function(item){
+            var board = $(item).find(".board-number").text();
+            return parseInt(board);
+          }
+        }
+    };
+    
+    // init
+    $("div#masonary").onShow(function(){
+      $container.isotope(isOption);
+    });
+    
+    $("#sort-by-board").click(function(){
+      $container.isotope({ sortBy: 'board' });
+    });
+
+    // filter items on button click
+    $('#filters').on( 'click', 'a', function( event ) {
+      var filterValue = parseInt($(this).text()[0]);
+
+      // use filter function if value matches
+      $container.isotope({ filter: function(){
+        if(!isNaN(filterValue)){
+            var board = $(this).find(".board-number").text();
+            return parseInt(board) == filterValue;
+        }else{
+            return true;
+        }
+      }});
+    });
 
 });
