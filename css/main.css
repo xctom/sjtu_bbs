@@ -268,10 +268,10 @@ body {
 }
 
 #sidebar-wrapper {
-    margin-left: -150px;
+    margin-left: -200px;
     left: 70px;
-    width: 150px;
-    background: #222;
+    width: 200px;
+    background: #002233;
     position: fixed;
     height: 100%;
     z-index: 10000;
@@ -281,22 +281,22 @@ body {
 .sidebar-nav {
     display: block;
     float: left;
-    width: 150px;
+    width: 200px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 #wrapper.active {
-    padding-left: 150px;
+    padding-left: 200px;
 }
 
 #wrapper.active #navbar-top {
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 #wrapper.active #sidebar-wrapper {
-    left: 150px;
+    left: 200px;
 }
 
 #page-content-wrapper {
@@ -304,11 +304,11 @@ body {
 }
 
 #sidebar_menu li a, .sidebar-nav li a {
-    color: #999;
+    color: #fff;
     display: block;
     float: left;
     text-decoration: none;
-    width: 150px;
+    width: 200px;
     /*border-top: 1px solid #373737;
     border-bottom: 1px solid #1A1A1A;*/
     -webkit-transition: background .5s;
@@ -324,9 +324,13 @@ body {
 }
 
 .sidebar-nav li a {
-  color: #999999;
+  color: #DDDDFF;
   display: block;
   text-decoration: none;
+}
+
+#wrapper.active .sidebar-nav li a {
+    color: #fff;   
 }
 
 .sidebar-nav li a:hover {
@@ -344,10 +348,6 @@ body {
   height: 65px;
   line-height: 60px;
   font-size: 18px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -376,6 +376,7 @@ body {
 }
 .sidebar-tooltip .tooltip-inner {
     padding: 5px 15px;
+    background-color: #001133;
 }
 /* @end */
 
