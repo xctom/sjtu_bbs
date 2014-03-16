@@ -1,6 +1,25 @@
+/*    
+    .___                                                        ___.    
+  __| _/____   ____    ____ ___.__.__ __   ____   __  _  __ ____\_ |__  
+ / __ |/  _ \ /    \  / ___<   |  |  |  \_/ __ \  \ \/ \/ // __ \| __ \ 
+/ /_/ (  <_> )   |  \/ /_/  >___  |  |  /\  ___/   \     /\  ___/| \_\ \
+\____ |\____/|___|  /\___  // ____|____/  \___  >   \/\_/  \___  >___  /
+     \/           \//_____/ \/                \/               \/    \/ 
+
+Powered by dongyue web.     
+*/
+/*
+__________
+\____    /
+  /     / 
+ /     /_ 
+/_______ \
+        \/
+A Zen Design. 
+*/
+
+
 /* @group Reset */
-
-
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
 strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
@@ -299,10 +318,6 @@ body {
     left: 200px;
 }
 
-#page-content-wrapper {
-  width: 100%;
-}
-
 #sidebar_menu li a, .sidebar-nav li a {
     color: #fff;
     display: block;
@@ -318,6 +333,10 @@ body {
     transition: background .5s;
 }
 
+.sidebar-nav-bottom {
+    position: absolute;
+    bottom: 0;
+}
 .sidebar-nav li {
   line-height: 60px;
   text-indent: 20px;
@@ -345,9 +364,10 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-  height: 65px;
-  line-height: 60px;
-  font-size: 18px;
+    margin: 3px 0;
+    height: 65px;
+    line-height: 60px;
+    font-size: 18px;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -371,6 +391,9 @@ body {
 }
 
 /* @group Tooltip */
+#wrapper.active .sidebar-tooltip {
+    display: none;
+}
 .sidebar-tooltip .tooltip {
     font-size: 18px;
 }

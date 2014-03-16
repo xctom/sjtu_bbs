@@ -9,7 +9,7 @@ $(function(){
 	var options={
 		animation: true,
 		trigger: 'hover',
-		placement: 'right',
+		placement: 'auto right',
 		container: '.sidebar-tooltip'
 	}
 	$(".sidebar-nav li a").tooltip(options);
