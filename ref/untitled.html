@@ -1,0 +1,1035 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js" ><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>untitles</title>
+
+    <meta name="description" content="Participate in discussions with other Treehouse members and learn." />
+  <meta name="description" content="">
+
+
+    <link href="application.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+
+<body id="" class="">
+
+  
+<div id="shelf">
+  <ul class="global-nav">
+    <li>
+      <a href="/" class="">
+        <span class="icon icon-home"></span>
+        <span class="nav-tooltip">Home</span>
+</a>    </li>
+
+      <li>
+        <a href="/tracks" class="">
+          <span class="icon icon-tracks"></span>
+          <span class="nav-tooltip">Tracks</span>
+</a>      </li>
+      <li>
+        <a href="/library" class="">
+          <span class="icon icon-library"></span>
+          <span class="nav-tooltip">Library</span>
+</a>      </li>
+      <li>
+        <a href="/forum" class="selected">
+          <span class="icon icon-forum"></span>
+          <span class="nav-tooltip">Forum</span>
+</a>      </li>
+      <li>
+        <a href="/workspaces" class="">
+
+          <span class="icon icon-workspaces">
+          </span>
+          <span class="nav-tooltip">
+            Workspaces
+          </span>
+</a>      </li>
+
+    <div class="bottom-anchored">
+      <li>
+        <a href="/support">
+          <span class="icon icon-support"></span>
+          <span class="nav-tooltip">Contact Support</span>
+        </a>
+      </li>
+
+    </div>
+
+  </ul>
+  <a class="trigger-shelf shelf-opener"><span class="icon icon-open-shelf"></span></a>
+</div>
+
+
+
+  <div id="content">
+    <div class="fixed-heading">
+  <div class="grid-container grid-parent">
+    <div class="primary-heading">
+
+      <div class="global-secondary-nav">
+        <ul>
+
+          <div class="public-nav">
+            <li class="support">
+              <a href="/support">
+              Help
+              </a>
+            </li>
+              <li>
+                <a href="https://teamtreehouse.com/signin?return_to=%2Fforum" class="featurette" data-featurette="modal-trigger" data-mobile-fallback="doit" data-target="login-modal">
+                  Sign in
+</a>              </li>
+              <li>
+                <a href="/subscribe/plans?trial=yes" class="button button-primary">Free trial</a>
+              </li>
+          </div>
+        </ul>
+      </div>
+
+      <a class="trigger-mobile-shelf" data-featurette="mobile-shelf"><span class="icon icon-hamburger"></span></a>
+      <h1>
+  Forum
+</h1>
+
+      <!-- Loading Spinner -->
+      <span class="loading-spinner"><span></span></span>
+
+    </div>
+  </div>
+
+  
+
+</div>
+<div class="heading-pocket"></div>
+
+    
+<div class="grid-container featurette" data-featurette="forum-index">
+
+  <div class="grid-20 push-80 fixed-sidebar">
+    <div class="action-container">
+    </div>
+
+    <div class="content-filter">
+
+      <div class="form-item form-search">
+        <form accept-charset="UTF-8" action="/forum?method=get" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="xH+f1jK3jrri+Dg0Hf/k8JE60+Ltic7a/d8z/Pkflxw=" /></div>
+          <label for="q">Search</label>
+          <input class="appended-search" id="q" name="q[]" size="30" type="text" />
+          <button class="search-button"><span class="icon icon-search"></span></button>
+</form>      </div>
+
+      <div class="filters-container">
+
+  <div class="form-group" id="step-tagged-content" style="display:none">
+    <input type="hidden" id="step_id" />
+    <h4><a>Content <span class="icon icon-chevron-down"></span></a></a></h4>
+    <ul class="filter-list" id="content-tag" data-featurette="filter-list">
+      <li>
+        <strong class="selected">
+          <a class="filter-content-tag" data-filter-list-val="content:">
+            <span class="icon icon-close-dark"></span>
+          </a>
+          <span class="icon icon-video-small content-icon"></span>
+          <span class='content-title'>What is Sass?</span>
+        </strong>
+      </li>
+    </ul>
+  </div>
+
+  <div class="form-group">
+    <h4><a>Topics <span class="icon icon-chevron-down"></span></a></h4>
+    <ul class="filter-list main featurette" id="topic" data-featurette='filter-list'>
+      <li><a data-filter-value="">All Topics</a></li>
+
+      <li><a data-filter-value="html">HTML <span class='topic-color' style='color: #39ADD1'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="css">CSS <span class='topic-color' style='color: #2570a8'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="design">Design <span class='topic-color' style='color: #E0AB18'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="javascript">JavaScript <span class='topic-color' style='color: #913B53'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="ruby">Ruby <span class='topic-color' style='color: #E15258'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="php">PHP <span class='topic-color' style='color: #665885'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="wordpress">WordPress <span class='topic-color' style='color: #9D8AC7'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="ios">iOS <span class='topic-color' style='color: #53BBB4'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="android">Android <span class='topic-color' style='color: #51B46D'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="development-tools">Development Tools <span class='topic-color' style='color: #62707D'>&bull;</span></a>
+      </li>
+      <li><a data-filter-value="business">Business <span class='topic-color' style='color: #F9845B'>&bull;</span></a>
+      </li>
+
+      <li><a data-filter-value="general-discussion">
+        General Discussion
+        <span class="topic-color" style="color: #b2bac2">&bull;</span>
+      </a></li>
+    </ul>
+  </div>
+</div>
+<a class="trigger-filters"><span class="icon icon-show-hide"></span><i>Show filters</i><i style="display: none">Hide filters</i> <span class="icon icon-chevron-down"></span></a></h4>
+
+
+    </div>
+
+    <div data-markup-move>
+
+      <div class="module secondary-module forum-tips">
+        <div class="secondary-heading">
+          <h3>Tips for asking questions</h3>
+        </div>
+
+        <a class="video-trigger" data-featurette="modal-trigger" data-target="forum_tips" href="#">
+        <span class="icon icon-video-small-white"></span>
+        <img src="/assets/content/forum-tips-thumb.jpg">
+</a>        <p>The best way to get the answers you're looking for is to learn how to best ask your question. Learn some tips on how to best format your questions in the forum.</p>
+      </div>
+
+      <div class="module secondary-module">
+        <div class="secondary-heading">
+          <h3>Have technical questions?</h3>
+        </div>
+        <p>If you're experiencing what appears to be a bug or something that doesn't seem to be working correctly, please
+          <a href="/support">contact support</a> directly.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="grid-80 pull-20 grid-parent" id="content-container">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+
+          <ul class="sorting-container main featurette" id="sort" data-featurette="filter-list">
+            <li><a data-filter-value="">Newest</a></li>
+            <li><a data-filter-value="active">Active</a></li>
+            <li><a data-filter-value="unanswered">Unanswered</a></li>
+            <li><a data-filter-value="featured">Featured</a></li>
+
+          </ul>
+
+          <div id="forums-pjax">
+            <div id="discussions-container">
+  <div id="posts">
+    <ul class="discussions-list">
+      
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/6e921f9f415d225055a6b416efb105b0?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/kyndeldollison" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="kyndeldollison"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/6e921f9f415d225055a6b416efb105b0?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/can-the-background-image-of-a-div-overflow-the-div-without-causing-scroll-bars">Can the background image of a div overflow the div without causing scroll bars?</a></h2>
+      <p class="byline">34 minutes ago by <a href="/kyndeldollison" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="kyndeldollison">Kyndel Dollison</a> <a href="/kyndeldollison" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="kyndeldollison">1,932</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:css" class="topic-tag" data-filter-list-val="topic:css"><span class="topic-bullet" style="color:#2570a8">&bull;</span> CSS</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/09d6b0057b0e2e7980b93b0c6558c375?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/jordanoverbye" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="jordanoverbye"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/09d6b0057b0e2e7980b93b0c6558c375?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/javascript-objects">Javascript Objects </a></h2>
+      <p class="byline">about 2 hours ago by <a href="/jordanoverbye" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="jordanoverbye">Jordan Overbye</a> <a href="/jordanoverbye" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="jordanoverbye">4,710</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:javascript" class="topic-tag" data-filter-list-val="topic:javascript"><span class="topic-bullet" style="color:#913B53">&bull;</span> JavaScript</a></li>
+        <li><a href="/forum/content:2663" class="step-tag" data-filter-list-val="content:2663"><span class="icon icon-code-challenge-small"></span> Basic Objects</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/7dadc1b6f9e471a88f45c32dea5f7f1e?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/danyellesmith" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="danyellesmith"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/7dadc1b6f9e471a88f45c32dea5f7f1e?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/crystal-ball">Crystal Ball</a></h2>
+      <p class="byline">about 2 hours ago by <a href="/danyellesmith" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="danyellesmith">Danyelle Smith</a> <a href="/danyellesmith" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="danyellesmith">72</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:android" class="topic-tag" data-filter-list-val="topic:android"><span class="topic-bullet" style="color:#51B46D">&bull;</span> Android</a></li>
+        <li><a href="/forum/content:1028" class="step-tag" data-filter-list-val="content:1028"><span class="icon icon-video-small"></span> Introduction to Methods and Classes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/530852/image.jpg)"><a href="/mcgeraldlezeau" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="mcgeraldlezeau"><img alt="Image" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/530852/image.jpg" /></a></div>
+      <h2><a href="/forum/debuging-problem">Debuging problem</a></h2>
+      <p class="byline">about 2 hours ago by <a href="/mcgeraldlezeau" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="mcgeraldlezeau">Mcgerald Lezeau</a> <a href="/mcgeraldlezeau" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="mcgeraldlezeau">930</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ios" class="topic-tag" data-filter-list-val="topic:ios"><span class="topic-bullet" style="color:#53BBB4">&bull;</span> iOS</a></li>
+        <li><a href="/forum/content:2814" class="step-tag" data-filter-list-val="content:2814"><span class="icon icon-video-small"></span> Debugging Basics</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/e8b5462bbd7d9c4843e92424560b009b?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/anthonygriffin" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="anthonygriffin"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/e8b5462bbd7d9c4843e92424560b009b?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/customizing-buttons-and-labels">Customizing Buttons and Labels</a></h2>
+      <p class="byline">about 2 hours ago by <a href="/anthonygriffin" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="anthonygriffin">Anthony Griffin</a> <a href="/anthonygriffin" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="anthonygriffin">204</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:android" class="topic-tag" data-filter-list-val="topic:android"><span class="topic-bullet" style="color:#51B46D">&bull;</span> Android</a></li>
+        <li><a href="/forum/content:1214" class="step-tag" data-filter-list-val="content:1214"><span class="icon icon-video-small"></span> Customizing Buttons and Labels</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/12d3c9a028faf2b6fa0341e43189f627?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/bradysherman" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="bradysherman"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/12d3c9a028faf2b6fa0341e43189f627?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/need-help-with-functions">need help with functions</a></h2>
+      <p class="byline">about 2 hours ago by <a href="/bradysherman" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="bradysherman">Brady Sherman</a> <a href="/bradysherman" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="bradysherman">108</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ios" class="topic-tag" data-filter-list-val="topic:ios"><span class="topic-bullet" style="color:#53BBB4">&bull;</span> iOS</a></li>
+        <li><a href="/forum/content:3075" class="step-tag" data-filter-list-val="content:3075"><span class="icon icon-code-challenge-small"></span> Functions</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/c077f0cf6fe3dc2317fd3cd6ec26d78a?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/brett" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="brett"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/c077f0cf6fe3dc2317fd3cd6ec26d78a?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/crunchbase-api">Crunchbase API </a></h2>
+      <p class="byline">about 3 hours ago by <a href="/brett" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="brett">Brett Bivens</a> <a href="/brett" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="brett">2,376</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:general-discussion" class="topic-tag" data-filter-list-val="topic:general-discussion"><span class="topic-bullet" style="color:#b2bac2">&bull;</span> General Discussion</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/cdb77954b943de513a5d4f712a062ea8?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/andy" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="andy"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/cdb77954b943de513a5d4f712a062ea8?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/download-time">Download Time</a></h2>
+      <p class="byline">about 3 hours ago by <a href="/andy" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="andy">Andy Peninger</a> <a href="/andy" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="andy">1,146</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ruby" class="topic-tag" data-filter-list-val="topic:ruby"><span class="topic-bullet" style="color:#E15258">&bull;</span> Ruby</a></li>
+        <li><a href="/forum/content:4222" class="step-tag" data-filter-list-val="content:4222"><span class="icon icon-video-small"></span> Installing the Treehouse VM on Mac</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>3</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/cdb77954b943de513a5d4f712a062ea8?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/andy" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="andy"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/cdb77954b943de513a5d4f712a062ea8?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/eliminate-default-terminal-stuff">Eliminate Default Terminal Stuff?</a></h2>
+      <p class="byline">about 3 hours ago by <a href="/andy" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="andy">Andy Peninger</a> <a href="/andy" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="andy">1,146</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ruby" class="topic-tag" data-filter-list-val="topic:ruby"><span class="topic-bullet" style="color:#E15258">&bull;</span> Ruby</a></li>
+        <li><a href="/forum/content:4222" class="step-tag" data-filter-list-val="content:4222"><span class="icon icon-video-small"></span> Installing the Treehouse VM on Mac</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>2</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/533772/Team-WORK-Aryon-Hopkins.JPG)"><a href="/aryonhopkins" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="aryonhopkins"><img alt="Team-work-aryon-hopkins" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/533772/Team-WORK-Aryon-Hopkins.JPG" /></a></div>
+      <h2><a href="/forum/totally-lost-in-the-command-line">Totally lost in the command line</a></h2>
+      <p class="byline">about 3 hours ago by <a href="/aryonhopkins" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="aryonhopkins">Aryon Hopkins</a> <a href="/aryonhopkins" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="aryonhopkins">90</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ruby" class="topic-tag" data-filter-list-val="topic:ruby"><span class="topic-bullet" style="color:#E15258">&bull;</span> Ruby</a></li>
+        <li><a href="/forum/content:4192" class="step-tag" data-filter-list-val="content:4192"><span class="icon icon-video-small"></span> Installing Ruby on Mac</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/83465/images.jpg)"><a href="/sylinic" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="sylinic"><img alt="Images" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/83465/images.jpg" /></a></div>
+      <h2><a href="/forum/grid-layout-quiz-question-thank-you">Grid layout quiz question, thank you!</a></h2>
+      <p class="byline">about 3 hours ago by <a href="/sylinic" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="sylinic">Syl inic</a> <a href="/sylinic" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="sylinic">4,424</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:css" class="topic-tag" data-filter-list-val="topic:css"><span class="topic-bullet" style="color:#2570a8">&bull;</span> CSS</a></li>
+        <li><a href="/forum/content:8372" class="step-tag" data-filter-list-val="content:8372"><span class="icon icon-quiz-small"></span> Grid Layout Review</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/cec7059e3b7db13f020eb3cced884cc8?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/manishmittal" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="manishmittal"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/cec7059e3b7db13f020eb3cced884cc8?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/appearance-proxy">Appearance Proxy...</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/manishmittal" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="manishmittal">Manish Mittal</a> <a href="/manishmittal" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="manishmittal">2,550</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ios" class="topic-tag" data-filter-list-val="topic:ios"><span class="topic-bullet" style="color:#53BBB4">&bull;</span> iOS</a></li>
+        <li><a href="/forum/content:2689" class="step-tag" data-filter-list-val="content:2689"><span class="icon icon-code-challenge-small"></span> Styling the Navigation Bar</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/9d5bbaa6ed9879d0eafe6e1bc4fbe7e9?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/mitchcail" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="mitchcail"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/9d5bbaa6ed9879d0eafe6e1bc4fbe7e9?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/having-a-problem-when-creating-in-accepting-user-friendships">Having a problem when creating in accepting user friendships</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/mitchcail" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="mitchcail">mitch cail</a> <a href="/mitchcail" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="mitchcail">1,503</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ruby" class="topic-tag" data-filter-list-val="topic:ruby"><span class="topic-bullet" style="color:#E15258">&bull;</span> Ruby</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/c1bcfb7c7ee312d024c171c17b3076a1?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/jasonmcgovern" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="jasonmcgovern"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/c1bcfb7c7ee312d024c171c17b3076a1?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/nomethoderror-in-sass-tutorial-watch">nomethoderror in sass tutorial --watch .</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/jasonmcgovern" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="jasonmcgovern">Jason McGovern</a> <a href="/jasonmcgovern" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="jasonmcgovern">1,560</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:general-discussion" class="topic-tag" data-filter-list-val="topic:general-discussion"><span class="topic-bullet" style="color:#b2bac2">&bull;</span> General Discussion</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/410462/gabrielserraonline.JPG)"><a href="/gabeser" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="gabeser"><img alt="Gabrielserraonline" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/410462/gabrielserraonline.JPG" /></a></div>
+      <h2><a href="/forum/how-to-get-your-first-job-in-web-development">how to get your first job in web development?</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/gabeser" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="gabeser">Gabe S</a> <a href="/gabeser" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="gabeser">4,626</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:general-discussion" class="topic-tag" data-filter-list-val="topic:general-discussion"><span class="topic-bullet" style="color:#b2bac2">&bull;</span> General Discussion</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/987892d259be11b87faa0d0e384fa26f?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/davidbell3" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="davidbell3"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/987892d259be11b87faa0d0e384fa26f?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/crystal-ball-emulator-fails-to-run">Crystal Ball Emulator fails to run</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/davidbell3" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="davidbell3">David Bell</a> <a href="/davidbell3" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="davidbell3">72</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:android" class="topic-tag" data-filter-list-val="topic:android"><span class="topic-bullet" style="color:#51B46D">&bull;</span> Android</a></li>
+        <li><a href="/forum/content:1019" class="step-tag" data-filter-list-val="content:1019"><span class="icon icon-video-small"></span> Initial Layout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/532562/IMG_6181.JPG)"><a href="/charlotteboulan" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="charlotteboulan"><img alt="Img_6181" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/532562/IMG_6181.JPG" /></a></div>
+      <h2><a href="/forum/html-introduction-1st-step-didnt-get-something-that-look-very-easy">HTML introduction 1st step : didn&#x27;t get something that look very easy !</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/charlotteboulan" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="charlotteboulan">charlotte boulan</a> <a href="/charlotteboulan" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="charlotteboulan">463</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:html" class="topic-tag" data-filter-list-val="topic:html"><span class="topic-bullet" style="color:#39ADD1">&bull;</span> HTML</a></li>
+        <li><a href="/forum/content:446" class="step-tag" data-filter-list-val="content:446"><span class="icon icon-video-small"></span> First Steps</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>2</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/1f32cbc4da26ec0de8c4fd125a516f55?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/ilhommaksadkulov" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="ilhommaksadkulov"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/1f32cbc4da26ec0de8c4fd125a516f55?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/cannot-pass-challange">Cannot pass Challange</a></h2>
+      <p class="byline">about 4 hours ago by <a href="/ilhommaksadkulov" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="ilhommaksadkulov">Ilhom Maksadkulov</a> <a href="/ilhommaksadkulov" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="ilhommaksadkulov">1,668</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:css" class="topic-tag" data-filter-list-val="topic:css"><span class="topic-bullet" style="color:#2570a8">&bull;</span> CSS</a></li>
+        <li><a href="/forum/content:2223" class="step-tag" data-filter-list-val="content:2223"><span class="icon icon-code-challenge-small"></span> Adaptive Layouts with Media Queries </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/481952/2013-12-27_16.40.08.jpg)"><a href="/brendakittles" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="brendakittles"><img alt="2013-12-27_16.40.08" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/481952/2013-12-27_16.40.08.jpg" /></a></div>
+      <h2><a href="/forum/add-the-appropriate-css-within-the-same-media-query-that-will-force-the-love-at-first-bite-illustration-to-disappear-4">Add the appropriate CSS within the same media query that will force the “love at first bite” illustration to disappear.</a></h2>
+      <p class="byline">about 5 hours ago by <a href="/brendakittles" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="brendakittles">Brenda Kittles</a> <a href="/brendakittles" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="brendakittles">582</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:html" class="topic-tag" data-filter-list-val="topic:html"><span class="topic-bullet" style="color:#39ADD1">&bull;</span> HTML</a></li>
+        <li><a href="/forum/content:1170" class="step-tag" data-filter-list-val="content:1170"><span class="icon icon-code-challenge-small"></span> Content Defined Breakpoints</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>2</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/54180b61f0c015c56f0832437d0a7f19?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/robertstewart" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="robertstewart"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/54180b61f0c015c56f0832437d0a7f19?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/stage-7-backgrounds-and-borders-code-challenge">Stage 7 Backgrounds and Borders Code Challenge</a></h2>
+      <p class="byline">about 5 hours ago by <a href="/robertstewart" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="robertstewart">Robert Stewart</a> <a href="/robertstewart" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="robertstewart">2,538</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:css" class="topic-tag" data-filter-list-val="topic:css"><span class="topic-bullet" style="color:#2570a8">&bull;</span> CSS</a></li>
+        <li><a href="/forum/content:1650" class="step-tag" data-filter-list-val="content:1650"><span class="icon icon-code-challenge-small"></span> Advanced Backgrounds</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count discussion-best-answered">
+        <span class="icon icon-check-green"></span>
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/500022/photo.JPG)"><a href="/joelbindi" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="joelbindi"><img alt="Photo" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/500022/photo.JPG" /></a></div>
+      <h2><a href="/forum/building-the-profile-page-challenge-1">Building the profile page, challenge 1 </a></h2>
+      <p class="byline">about 5 hours ago by <a href="/joelbindi" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="joelbindi">joel bindi</a> <a href="/joelbindi" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="joelbindi">1,512</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ruby" class="topic-tag" data-filter-list-val="topic:ruby"><span class="topic-bullet" style="color:#E15258">&bull;</span> Ruby</a></li>
+        <li><a href="/forum/content:1128" class="step-tag" data-filter-list-val="content:1128"><span class="icon icon-code-challenge-small"></span> Testing the Profile Name</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/364892/1545895_435103606618793_2044415596_n.jpg)"><a href="/diegomancevodelcastillo" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="diegomancevodelcastillo"><img alt="1545895_435103606618793_2044415596_n" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/364892/1545895_435103606618793_2044415596_n.jpg" /></a></div>
+      <h2><a href="/forum/in-appjs-on-line-20-initialize-a-new-marker-with-the-map-set-to-themap-and-the-position-set-to-addresslocation-2">In app.js, on line 20, initialize a new marker with the &#x27;map&#x27; set to &#x27;theMap&#x27; and the &#x27;position&#x27; set to &#x27;addressLocation</a></h2>
+      <p class="byline">about 6 hours ago by <a href="/diegomancevodelcastillo" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="diegomancevodelcastillo">Diego Mancevo del Castillo</a> <a href="/diegomancevodelcastillo" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="diegomancevodelcastillo">3,715</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:javascript" class="topic-tag" data-filter-list-val="topic:javascript"><span class="topic-bullet" style="color:#913B53">&bull;</span> JavaScript</a></li>
+        <li><a href="/forum/content:1796" class="step-tag" data-filter-list-val="content:1796"><span class="icon icon-code-challenge-small"></span> Adding Point Markers to a Map: Markers</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/547632/Boondocks-huey.png)"><a href="/kyleculp" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="kyleculp"><img alt="Boondocks-huey" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/547632/Boondocks-huey.png" /></a></div>
+      <h2><a href="/forum/favorite-editor">Favorite Editor?</a></h2>
+      <p class="byline">about 6 hours ago by <a href="/kyleculp" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="kyleculp">Kyle Culp</a> <a href="/kyleculp" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="kyleculp">210</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:design" class="topic-tag" data-filter-list-val="topic:design"><span class="topic-bullet" style="color:#E0AB18">&bull;</span> Design</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count discussion-best-answered">
+        <span class="icon icon-check-green"></span>
+      <strong>9</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/102016/codepen.jpg)"><a href="/katawura" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="katawura"><img alt="Codepen" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/102016/codepen.jpg" /></a></div>
+      <h2><a href="/forum/javascript-books">javascript books</a></h2>
+      <p class="byline">about 6 hours ago by <a href="/katawura" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="katawura">Kelvin Atawura</a> <a href="/katawura" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="katawura">3,480</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:javascript" class="topic-tag" data-filter-list-val="topic:javascript"><span class="topic-bullet" style="color:#913B53">&bull;</span> JavaScript</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>2</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/315352/279dd4f.jpg)"><a href="/ninyo" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="ninyo"><img alt="279dd4f" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/315352/279dd4f.jpg" /></a></div>
+      <h2><a href="/forum/installing-sass-2">Installing Sass</a></h2>
+      <p class="byline">about 6 hours ago by <a href="/ninyo" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="ninyo">Ninyo Aganon</a> <a href="/ninyo" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="ninyo">5,845</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:css" class="topic-tag" data-filter-list-val="topic:css"><span class="topic-bullet" style="color:#2570a8">&bull;</span> CSS</a></li>
+        <li><a href="/forum/content:2722" class="step-tag" data-filter-list-val="content:2722"><span class="icon icon-video-small"></span> Installing and Using Sass</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/361832/JBDSC_2315_4x6.2.jpg)"><a href="/jonathanbroderick" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="jonathanbroderick"><img alt="Jbdsc_2315_4x6.2" src="https://treehouse-uploads.s3.amazonaws.com/production/profile-photos/361832/JBDSC_2315_4x6.2.jpg" /></a></div>
+      <h2><a href="/forum/practice-suggestions">Practice suggestions</a></h2>
+      <p class="byline">about 6 hours ago by <a href="/jonathanbroderick" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="jonathanbroderick">Jonathan Broderick</a> <a href="/jonathanbroderick" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="jonathanbroderick">1,494</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:general-discussion" class="topic-tag" data-filter-list-val="topic:general-discussion"><span class="topic-bullet" style="color:#b2bac2">&bull;</span> General Discussion</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>4</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/80ac27e5e2525cd72bc3a4239a50bec7?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/vikrampal2" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="vikrampal2"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/80ac27e5e2525cd72bc3a4239a50bec7?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/please-help-search-feature-for-ribbit">PLEASE Help! Search Feature For Ribbit</a></h2>
+      <p class="byline">about 6 hours ago by <a href="/vikrampal2" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="vikrampal2">Vikram Pal</a> <a href="/vikrampal2" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="vikrampal2">126</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:ios" class="topic-tag" data-filter-list-val="topic:ios"><span class="topic-bullet" style="color:#53BBB4">&bull;</span> iOS</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count discussion-best-answered">
+        <span class="icon icon-check-green"></span>
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/8f3244d88f2fde8a203844d83ed43a6c?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/ryandecker" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="ryandecker"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/8f3244d88f2fde8a203844d83ed43a6c?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/files-folders">Files &amp; Folders</a></h2>
+      <p class="byline">about 7 hours ago by <a href="/ryandecker" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="ryandecker">Ryan Decker</a> <a href="/ryandecker" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="ryandecker">540</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:general-discussion" class="topic-tag" data-filter-list-val="topic:general-discussion"><span class="topic-bullet" style="color:#b2bac2">&bull;</span> General Discussion</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>2</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/c59679ee264b07df80f3cb3c7cf96d85?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/robertgauthier" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="robertgauthier"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/c59679ee264b07df80f3cb3c7cf96d85?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/bug-in-solutions-assign-it-the-html-escaped-value-of-the-mypluginusername-input-field">Bug in solutions: Assign it the HTML escaped value of the my_plugin_username input field.</a></h2>
+      <p class="byline">about 7 hours ago by <a href="/robertgauthier" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="robertgauthier">Robert Gauthier</a> <a href="/robertgauthier" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="robertgauthier">9,384</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:wordpress" class="topic-tag" data-filter-list-val="topic:wordpress"><span class="topic-bullet" style="color:#9D8AC7">&bull;</span> WordPress</a></li>
+        <li><a href="/forum/content:2896" class="step-tag" data-filter-list-val="content:2896"><span class="icon icon-code-challenge-small"></span> Admin Area Forms in WordPress</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>0</strong>
+      <p>Answers</p>
+    </div>
+  </div>
+</li>
+
+<li>
+  <div class="grid-75 tablet-grid-75 mobile-grid-75 grid-parent">
+    <div class="discussion-meta">
+      <div class="avatar" style="background-image: url(https://secure.gravatar.com/avatar/c11f2b673d5f80297af57d7ff35d1c95?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg)"><a href="/boriskamp" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="boriskamp"><img alt="Default_avatar" src="https://secure.gravatar.com/avatar/c11f2b673d5f80297af57d7ff35d1c95?s=200&amp;d=https://teamtreehouse.com/assets/content/default_avatar.png&amp;r=pg" /></a></div>
+      <h2><a href="/forum/how-to-build-a-wordpress-theme-4">How to build a wordpress theme.</a></h2>
+      <p class="byline">about 7 hours ago by <a href="/boriskamp" class="featurette" data-behavior="mini-profile-trigger" data-profile-name="boriskamp">boris kamp</a> <a href="/boriskamp" class="featurette member-points" data-behavior="mini-profile-trigger" data-profile-name="boriskamp">3,756</a> </p>
+      <ul class="topics-list">
+        <li><a href="/forum/topic:wordpress" class="topic-tag" data-filter-list-val="topic:wordpress"><span class="topic-bullet" style="color:#9D8AC7">&bull;</span> WordPress</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-25 tablet-grid-25 mobile-grid-25 grid-parent">
+    <div class="reply-count">
+      <strong>1</strong>
+      <p>Answer</p>
+    </div>
+  </div>
+</li>
+
+    </ul>
+  </div>
+  <div class="pagination-container">
+    <span class="button disabled">Prev</span><span class='page-number'>Page 1 of 538</span><a class="button" rel="next" href="/forum?page=2">Next</a>
+  </div>
+
+  <!-- <div class="pagination-container">
+    <a class="button pagination-prev"><span class="icon icon-left"></span> Prev</a>
+    <span class="page-number">Page 1 of 5</span>
+    <a class="button pagination-next">Next <span class="icon icon-right"></span></a>
+  </div> -->
+
+  <div class="disclaimer disclaimer-spaced">
+    <span class="icon icon-info"></span>
+    <p>
+      Posting to the forum is only allowed for members with active accounts.<br>
+        Please <a href="/signin">sign in</a> or <a href="/subscribe/plans">sign up</a> to post.
+    </p>
+  </div>
+</div>
+
+          </div>
+
+        </div>
+      </div>
+      <div data-markup-move-target></div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div id="logged-out-footer" class="grid-container footer hide-on-mobile">
+  <div class="grid-parent grid-80">
+    <div class="grid-100">
+      <hr class="line">
+    </div>
+    <div class="grid-25 tablet-grid-25 mobile-grid-100 secondary-module">
+      <div class="footer-mission">
+        <img src="/assets/treehouse-logo-gray.svg"/>
+        <p>Our mission is to bring affordable Technology education to people everywhere, in order to help them achieve their dreams and change the world.
+        </p>
+      </div>
+    </div>
+    <!-- /mission -->
+
+
+    <div class="grid-25 tablet-grid-25 mobile-grid-100 secondary-module">
+      <div class="footer-company">
+        <div class="secondary-heading">
+          <h3>Our Company</h3>
+        </div>
+        <ul class="link-list left">
+          <li><a href="/about" rel="nofollow">About</a></li>
+          <li><a href="/contact" class="featurette" data-featurette="modal-trigger" data-mobile-fallback="doit" data-target="contact-form-modal" rel="nofollow">Contact Us</a></li>
+          <li><a href="/forum">Forum</a></li>
+          <li><a href="/stories">Treehouse Stories</a></li>
+          <li><a href="/perks">Student Perks</a></li>
+          <li><a href="http://blog.teamtreehouse.com">Treehouse Blog</a></li>
+          <li><a href="http://blog.teamtreehouse.com/treehouse-affiliate-program" rel="nofollow">Affiliate Program</a></li>
+          <li><a href="/careers" rel="nofollow">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- company -->
+
+    <div class="grid-25 tablet-grid-25 secondary-module mobile-grid-100">
+      <div class="footer-topics">
+        <div class="secondary-heading">
+          <h3>Topics</h3>
+        </div>
+        <ul>
+          <li><a href="/library/topic:html">HTML</a></li>
+          <li><a href="/library/topic:css">CSS</a></li>
+          <li><a href="/library/topic:design">Design</a></li>
+          <li><a href="/library/topic:javascript">JavaScript</a></li>
+          <li><a href="/library/topic:ruby">Ruby</a></li>
+          <li><a href="/library/topic:php">PHP</a></li>
+          <li><a href="/library/topic:wordpress">WordPress</a></li>
+          <li><a href="/library/topic:ios">iOS</a></li>
+          <li><a href="/library/topic:android">Android</a></li>
+          <li><a href="/library/topic:development-tools">Development Tools</a></li>
+          <li><a href="/library/topic:business">Business</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /topics -->
+
+    <div class="grid-25 tablet-grid-25 mobile-grid-100 secondary-module mobile-grid-100">
+      <div class="footer-adventures">
+        <div class="secondary-heading">
+          <h3>Tracks</h3>
+        </div>
+        <ul>
+          <li><a href="/tracks/web-design">Web Design</a></li>
+          <li><a href="/tracks/web-development">Web Development</a></li>
+          <li><a href="/tracks/rails-development">Rails Development</a></li>
+          <li><a href="/tracks/php-development">PHP Development</a></li>
+          <li><a href="/tracks/ios-development">iOS Development</a></li>
+          <li><a href="/tracks/android-development">Android Development</a></li>
+          <li><a href="/tracks/wordpress-development">Wordpress Development</a></li>
+          <li><a href="/tracks/starting-a-business">Starting a Business</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /adventures -->
+  </div>
+</div>
+<!-- /logged-out-footer -->
+<div class="grid-container">
+
+  <div class="grid-80 footer">
+    <div class="lower-footer">
+        <ul class="footer-social">
+          <li>
+            <a href="http://twitter.com/treehouse" title="Twitter" class="icon tw">
+              <span class="hidden">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://youtube.com/user/gotreehouse" title="Youtube" class="icon yt">
+              <span class="hidden">Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://facebook.com/teamtreehouse" title="Facebook" class="icon fb">
+              <span class="hidden">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://plus.google.com/110278003536476194286/posts" title="Google Plus" class="icon google">
+              <span class="hidden">Google Plus</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://linkedin.com/company/treehouse-island-inc-" title="LinkedIn" class="icon li">
+              <span class="hidden">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://instagram.com/teamtreehouse" title="Instagram" class="icon ig">
+              <span class="hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      <div class="footer-copy">
+        <ul>
+          <li>
+            <a href="/about">About Treehouse</a>
+          </li>
+          <li>
+            <a href="/privacy" rel="nofollow">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/terms" rel="nofollow">Terms &amp; Conditions</a>
+          </li>
+        </ul>
+        <p>2014 Treehouse Island, Inc.</p>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+<!-- /lower-footer -->
+
+
+</body>
+</html>
