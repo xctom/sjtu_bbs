@@ -361,7 +361,6 @@ body {
     display: block;
 }
 
-
 .dropdown-submenu.pull-left {
     float: none;
 }
@@ -375,7 +374,7 @@ body {
     background: #002233;
 }
 
-#sidebar_menu li a, .sidebar-nav li a, .sidebar-nav .dropdown-menu a {
+#sidebar_menu li a, .sidebar-nav li a, .sidebar-nav .dropdown-menu li a {
     color: #fff;
     display: block;
     float: left;
@@ -397,6 +396,12 @@ body {
 .sidebar-nav li, .sidebar-nav .dropdown-menu li {
   line-height: 60px;
   text-indent: 20px;
+}
+
+.sidebar-nav .dropdown-menu li a {
+    padding: 0;
+    line-height: 60px;
+    font-weight: inherit;
 }
 
 .sidebar-nav li a {

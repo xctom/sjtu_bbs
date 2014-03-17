@@ -14,3 +14,11 @@ $(function(){
 	}
 	$(".sidebar-nav li a").tooltip(options);
 });
+
+//For Metis Menu
+$(function () {
+    $('#board-menu').metisMenu();
+});
+
+//For dropdown Menu 
+$(".scrollable-menu").css("max-height",$(window).height()-$("#sidebar_menu").height());
