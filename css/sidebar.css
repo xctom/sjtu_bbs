@@ -1,508 +1,106 @@
-/*    
-    .___                                                        ___.    
-  __| _/____   ____    ____ ___.__.__ __   ____   __  _  __ ____\_ |__  
- / __ |/  _ \ /    \  / ___<   |  |  |  \_/ __ \  \ \/ \/ // __ \| __ \ 
-/ /_/ (  <_> )   |  \/ /_/  >___  |  |  /\  ___/   \     /\  ___/| \_\ \
-\____ |\____/|___|  /\___  // ____|____/  \___  >   \/\_/  \___  >___  /
-     \/           \//_____/ \/                \/               \/    \/ 
-
-Powered by dongyue web.     
-*/
-/*
-__________
-\____    /
-  /     / 
- /     /_ 
-/_______ \
-        \/
-A Zen Design. 
-*/
-
-
-/* @group Reset */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
-strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
-legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
-canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
-section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup,
-menu, nav, section {
-    display: block
-}
-
-blockquote, q {
-    quotes: none
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-    content: "";
-    content: none
-}
-
-ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none
-}
-
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold
-}
-
-del {
-    text-decoration: line-through
-}
-
-abbr[title], dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
-}
-
-input, select {
-    vertical-align: middle
-}
-
-article p {
-    text-indent:2em;
-}
-
-.popover {  
-    max-width: 600px;  
-}  
-  
-.tooltip-inner {  
-    max-width: 600px;  
-}  
-
-/* @end */
-
-/* @group Input icon */
-.left-inner-addon {
-    position: relative;
-}
-.left-inner-addon input {
-    padding-left: 30px;    
-}
-.left-inner-addon i, .left-inner-addon span {
-    position: absolute;
-    padding: 10px 12px;
-    pointer-events: none;
-}
-
-.right-inner-addon {
-    position: relative;
-}
-.right-inner-addon input {
-    padding-right: 30px;    
-}
-.right-inner-addon i, .right-inner-addon span {
-    position: absolute;
-    right: 0px;
-    margin-right: 15px;
-    padding: 10px 12px;
-    pointer-events: none;
-}
-/* @end */
-
-/* @group btn-breadcrumb */
-
-/** The Magic **/
-.btn-breadcrumb .btn:not(:last-child):after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 10px solid white;
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  left: 100%;
-  z-index: 3;
-}
-.btn-breadcrumb .btn:not(:last-child):before {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 17px solid transparent;
-  border-bottom: 17px solid transparent;
-  border-left: 10px solid rgb(173, 173, 173);
-  position: absolute;
-  top: 50%;
-  margin-top: -17px;
-  margin-left: 1px;
-  left: 100%;
-  z-index: 3;
-}
-
-/** The Spacing **/
-.btn-breadcrumb .btn {
-  padding:6px 12px 6px 24px;
-}
-.btn-breadcrumb .btn:first-child {
-  padding:6px 6px 6px 10px;
-}
-.btn-breadcrumb .btn:last-child {
-  padding:6px 18px 6px 24px;
-}
-
-/** Default button **/
-.btn-breadcrumb .btn.btn-default:not(:last-child):after {
-  border-left: 10px solid #fff;
-}
-.btn-breadcrumb .btn.btn-default:not(:last-child):before {
-  border-left: 10px solid #ccc;
-}
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
-  border-left: 10px solid #ebebeb;
-}
-.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
-  border-left: 10px solid #adadad;
-}
-
-/** Primary button **/
-.btn-breadcrumb .btn.btn-primary:not(:last-child):after {
-  border-left: 10px solid #428bca;
-}
-.btn-breadcrumb .btn.btn-primary:not(:last-child):before {
-  border-left: 10px solid #357ebd;
-}
-.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):after {
-  border-left: 10px solid #3276b1;
-}
-.btn-breadcrumb .btn.btn-primary:hover:not(:last-child):before {
-  border-left: 10px solid #285e8e;
-}
-
-/** Success button **/
-.btn-breadcrumb .btn.btn-success:not(:last-child):after {
-  border-left: 10px solid #5cb85c;
-}
-.btn-breadcrumb .btn.btn-success:not(:last-child):before {
-  border-left: 10px solid #4cae4c;
-}
-.btn-breadcrumb .btn.btn-success:hover:not(:last-child):after {
-  border-left: 10px solid #47a447;
-}
-.btn-breadcrumb .btn.btn-success:hover:not(:last-child):before {
-  border-left: 10px solid #398439;
-}
-
-/** Danger button **/
-.btn-breadcrumb .btn.btn-danger:not(:last-child):after {
-  border-left: 10px solid #d9534f;
-}
-.btn-breadcrumb .btn.btn-danger:not(:last-child):before {
-  border-left: 10px solid #d43f3a;
-}
-.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):after {
-  border-left: 10px solid #d2322d;
-}
-.btn-breadcrumb .btn.btn-danger:hover:not(:last-child):before {
-  border-left: 10px solid #ac2925;
-}
-
-/** Warning button **/
-.btn-breadcrumb .btn.btn-warning:not(:last-child):after {
-  border-left: 10px solid #f0ad4e;
-}
-.btn-breadcrumb .btn.btn-warning:not(:last-child):before {
-  border-left: 10px solid #eea236;
-}
-.btn-breadcrumb .btn.btn-warning:hover:not(:last-child):after {
-  border-left: 10px solid #ed9c28;
-}
-.btn-breadcrumb .btn.btn-warning:hover:not(:last-child):before {
-  border-left: 10px solid #d58512;
-}
-
-/** Info button **/
-.btn-breadcrumb .btn.btn-info:not(:last-child):after {
-  border-left: 10px solid #5bc0de;
-}
-.btn-breadcrumb .btn.btn-info:not(:last-child):before {
-  border-left: 10px solid #46b8da;
-}
-.btn-breadcrumb .btn.btn-info:hover:not(:last-child):after {
-  border-left: 10px solid #39b3d7;
-}
-.btn-breadcrumb .btn.btn-info:hover:not(:last-child):before {
-  border-left: 10px solid #269abc;
-}
-
-/* @end */
-
-.avatar {
-    background-color: #d4d9dd;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    border: 5px solid #edeff0;
-    background-position: center;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: middle;
-    zoom: 1;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
-}
-
-body {
-    margin: 0;
-    font-family:"Microsoft Yahei", Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #333333;
-    background: #edeff0;
-}
-
-/* @group Navbar */
-
-#navbar-top {
-    padding-left: 10px;
-    padding-right: 15px;
-    background-color: #edeff0;
-    border: none;
-}
-
-/* @end */
-
-/* @group Sidebar */
-
-/* SmartMenus Core CSS (it's not recommended editing this)
-===============================================================*/
-
-.sm,.sm ul,.sm li{display:block;list-style:none;padding:0;margin:0;line-height:normal;direction:ltr;}
-ul.sm li{position:relative;}
-ul.sm a{position:relative;display:block;}
-ul.sm a.disabled{cursor:default;}
-ul.sm ul{position:absolute;top:-999999px;left:-800px;width:100px;}
-ul.sm li{float:left;}
-ul.sm-rtl{direction:rtl;}
-ul.sm-rtl li{float:right;}
-ul.sm ul li,ul.sm-vertical li{float:none;}
-ul.sm a{white-space:nowrap;}
-ul.sm ul a,ul.sm-vertical a{white-space:normal;}
-* html ul.sm-vertical li{float:left;width:100%;}
-* html ul.sm-vertical ul li{float:none;width:auto;}
-*:first-child+html ul.sm-vertical>li{float:left;width:100%;}
-ul.sm ul.sm-nowrap>li>a{white-space:nowrap;}
-ul.sm:after{content:"\00a0";display:block;height:0;font:0/0 serif;clear:both;visibility:hidden;overflow:hidden;}
-* html ul.sm{height:1px;}
-*:first-child+html ul.sm{min-height:1px;}
-ul.sm li *,ul.sm li *:before,ul.sm li *:after{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
-ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
-
 /*
 ---------------------------------------------------------------
   Note that styles you apply to the main menu items are inherited by the sub menus items too.
   If you'd like to avoid this, you could use child selectors (not supported by IE6) - for example:
-  .sm-clean > li > a { ... } instead of .sm-clean a { ... }
+  .sidebar-nav > li > a { ... } instead of .sidebar-nav a { ... }
 ---------------------------------------------------------------*/
 
 
 /* Menu box
 ===================*/
 
-	.sm-clean {
-		padding:0 10px;
-		background:#eee;
-		-moz-border-radius:50px;
-		-webkit-border-radius:50px;
-		border-radius:50px;
-	}
-	.sm-clean-vertical {
-		padding:10px 0;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		border-radius:5px;
-	}
-	.sm-clean ul {
-		border:1px solid #bbb;
-		padding:5px 0;
-		background:#fff;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		border-radius:5px;
-		-moz-box-shadow:0 5px 9px rgba(0,0,0,0.2);
-		-webkit-box-shadow:0 5px 9px rgba(0,0,0,0.2);
-		box-shadow:0 5px 9px rgba(0,0,0,0.2);
-	}
-	/* first sub level carets */
-	.sm-clean > li > ul:before {
-		content:'';
-		position:absolute;
-		top:-18px;
-		left:30px;
-		width:0;
-		height:0;
-		overflow:hidden;
-		border-width:9px; /* tweak size of the arrow */
-		border-style:dashed dashed solid dashed;
-		border-color:transparent transparent #bbb transparent;
-	}
-	.sm-clean > li > ul:after {
-		content:'';
-		position:absolute;
-		top:-16px;
-		left:31px;
-		width:0;
-		height:0;
-		overflow:hidden;
-		border-width:8px;
-		border-style:dashed dashed solid dashed;
-		border-color:transparent transparent #fff transparent;
-	}
-	/* no carets for vertical main */
-	.sm-clean-vertical > li > ul:before, .sm-clean-vertical > li > ul:after {
-		display:none;
+	.sidebar-nav,
+	.sidebar-nav ul {
+		background: #002233;
 	}
 
 
 /* Menu items
 ===================*/
-
-	.sm-clean a {
-		padding:12px;
-		color:#555;
-		font-size:18px;
-		line-height:17px;
-		font-family:'Lucida Sans Unicode','Lucida Sans','Lucida Grande',Arial,sans-serif;
+    .sidebar-nav li {
+        width: 200px;
+        background: #002233;
+        line-height: 60px;
+        text-indent: 20px;
+    }
+	.sidebar-nav a {
+		color: #DDDDFF;
 		text-decoration:none;
 	}
-	.sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active,
-	.sm-clean a.highlighted {
-		color:#D23600;
+	.sidebar-nav span.sub_icon {
+        float:right;
+        font-size: 18px;
+        padding-right: 45px;
+        padding-top:20px;
 	}
-	.sm-clean-vertical a:hover, .sm-clean-vertical a:focus, .sm-clean-vertical a:active,
-	.sm-clean-vertical a.highlighted {
-		background:#fff;
-	}
-	.sm-clean a.has-submenu {
-		padding-right:25px;
-	}
-	.sm-clean-vertical a,
- 	.sm-clean ul a {
-		padding:10px 20px;
-	}
-	.sm-clean-vertical a.has-submenu,
- 	.sm-clean ul a.has-submenu {
-		padding-right:40px;
-	}
-	.sm-clean ul a {
-		font-size:16px;
-	}
-	.sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active,
-	.sm-clean ul a.highlighted {
-		color:#D23600;
-		background:#eee;
+	.sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active,
+	.sidebar-nav a.highlighted {
+		color: #fff;
+		background: rgba(255,255,255,0.2);
 	}
 	/* current items - add the class manually to some item or check the "markCurrentItem" script option */
-	.sm-clean a.current, .sm-clean a.current:hover, .sm-clean a.current:focus, .sm-clean a.current:active {
-		color:#D23600;
+	.sidebar-nav a.current, .sidebar-nav a.current:hover, .sidebar-nav a.current:focus, .sidebar-nav a.current:active {
+		background:#555;
+		color:#fff;
+	}
+	.sidebar-nav a.has-submenu {
+		padding-right:32px;
+	}
+ 	.sidebar-nav ul a.has-submenu,
+	.sidebar-nav-vertical a.has-submenu {
+		padding-right:23px;
 	}
 
 
 /* Sub menu indicators
 ===================*/
 
-	.sm-clean a span.sub-arrow {
+	.sidebar-nav a span.sub-arrow {
 		position:absolute;
 		right:12px;
 		top:50%;
-		margin-top:-3px;
-		/* we will use one-side border to create a triangle so that we don't use a real background image, of course, you can use a real image if you like too */
-		width:0;
-		height:0;
-		overflow:hidden;
-		border-width:4px; /* tweak size of the arrow */
-		border-style:solid dashed dashed dashed;
-		border-color:#555 transparent transparent transparent;
+		margin-top:-8px;
+		width:16px;
+		height:16px;
+		line-height:16px;
 	}
-	.sm-clean-vertical a span.sub-arrow,
- 	.sm-clean ul a span.sub-arrow {
-		right:15px;
-		top:50%;
-		margin-top:-5px;
-		border-width:5px;
-		border-style:dashed dashed dashed solid;
-		border-color:transparent transparent transparent #555;
+ 	.sidebar-nav ul a span.sub-arrow,
+	.sidebar-nav-vertical a span.sub-arrow {
+		right:auto;
+		margin-left:-14px;
 	}
+
 
 
 /* Scrolling arrows containers for tall sub menus - test sub menu: "Sub test" -> "more..." -> "more..." in the default download package
 ===================*/
 
-	.sm-clean span.scroll-up, .sm-clean span.scroll-down {
+	.sidebar-nav span.scroll-up, .sidebar-nav span.scroll-down {
 		position:absolute;
 		display:none;
 		visibility:hidden;
 		overflow:hidden;
-		background:#fff;
+		background:#002233;
 		height:20px;
 		/* width and position will be automatically set by the script */
 	}
-	.sm-clean span.scroll-up:hover, .sm-clean span.scroll-down:hover {
-		background:#eee;
-	}
-	.sm-clean span.scroll-up-arrow, .sm-clean span.scroll-down-arrow {
+	.sidebar-nav span.scroll-up-arrow, .sidebar-nav span.scroll-down-arrow {
 		position:absolute;
-		top:0;
+		top:-2px;
 		left:50%;
-		margin-left:-6px;
+		margin-left:-8px;
 		/* we will use one-side border to create a triangle so that we don't use a real background image, of course, you can use a real image if you like too */
 		width:0;
 		height:0;
 		overflow:hidden;
-		border-width:6px; /* tweak size of the arrow */
+		border-width:8px; /* tweak size of the arrow */
 		border-style:dashed dashed solid dashed;
-		border-color:transparent transparent #555 transparent;
+		border-color:transparent transparent white transparent;
 	}
-	.sm-clean span.scroll-up:hover span.scroll-up-arrow {
-		border-color:transparent transparent #D23600 transparent;
-	}
-	.sm-clean span.scroll-down-arrow {
-		top:8px;
+	.sidebar-nav span.scroll-down-arrow {
+		top:6px;
 		border-style:solid dashed dashed dashed;
-		border-color:#555 transparent transparent transparent;
-	}
-	.sm-clean span.scroll-down:hover span.scroll-down-arrow {
-		border-color:#D23600 transparent transparent transparent;
+		border-color:white transparent transparent transparent;
 	}
 
 
@@ -513,38 +111,17 @@ ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 ---------------------------------------------------------------*/
 
 
-/* decrease horizontal main menu items left/right padding to avoid wrapping */
-@media screen and (max-width: 850px) {
-	.sm-clean:not(.sm-clean-vertical) > li > a {
-		padding-left:8px;
-		padding-right:8px;
-	}
-	.sm-clean:not(.sm-clean-vertical) > li > a.has-submenu {
-		padding-right:25px;
-	}
-}
-@media screen and (max-width: 750px) {
-	.sm-clean:not(.sm-clean-vertical) > li > a {
-		padding-left:3px;
-		padding-right:3px;
-	}
-	.sm-clean:not(.sm-clean-vertical) > li > a.has-submenu {
-		padding-right:25px;
-	}
-}
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 640px) {
 
 	/* The following will make the sub menus collapsible for small screen devices (it's not recommended editing these) */
-	ul.sm-clean{width:auto !important;}
-	ul.sm-clean ul{display:none;position:static !important;top:auto !important;left:auto !important;margin-left:0 !important;margin-top:0 !important;width:auto !important;min-width:0 !important;max-width:none !important;}
-	ul.sm-clean>li{float:none;}
-	ul.sm-clean>li>a,ul.sm-clean ul.sm-nowrap>li>a{white-space:normal;}
-	ul.sm-clean iframe{display:none;}
+	ul.sidebar-nav{width:auto !important;}
+	ul.sidebar-nav ul{display:none;position:static !important;top:auto !important;left:auto !important;margin-left:0 !important;margin-top:0 !important;width:auto !important;min-width:0 !important;max-width:none !important;}
+	ul.sidebar-nav>li{float:none;}
+	ul.sidebar-nav>li>a,ul.sidebar-nav ul.sm-nowrap>li>a{white-space:normal;}
+	ul.sidebar-nav iframe{display:none;}
 
 	/* Uncomment this rule to disable completely the sub menus for small screen devices */
-	/*.sm-clean ul, .sm-clean span.sub-arrow, .sm-clean iframe {
+	/*.sidebar-nav ul, .sidebar-nav span.sub-arrow, .sidebar-nav iframe {
 		display:none !important;
 	}*/
 
@@ -552,55 +129,46 @@ ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 /* Menu box
 ===================*/
 
-	.sm-clean {
-		padding:0;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		border-radius:5px;
-	}
-	.sm-clean ul {
+	.sidebar-nav ul {
 		border:0;
-		padding:0;
 		/* darken the background of the sub menus */
-		background:rgba(130,130,130,0.1);
-		-moz-border-radius:0;
-		-webkit-border-radius:0;
-		border-radius:0;
+		background:rgba(100,100,100,0.1);
 		-moz-box-shadow:none;
 		-webkit-box-shadow:none;
 		box-shadow:none;
-	}
-	/* no carets */
-	.sm-clean > li > ul:before, .sm-clean > li > ul:after {
-		display:none;
 	}
 
 
 /* Menu items
 ===================*/
 
-	.sm-clean a {
-		padding:13px 5px 13px 28px !important;
-		color:#555 !important;
+	.sidebar-nav a {
+		padding-top:13px;
+		padding-bottom:13px;
 		background:transparent !important;
+		color:#555 !important;
 	}
-	.sm-clean a.current {
-		color:#D23600 !important;
+	.sidebar-nav a.current {
+		background:#555 !important;
+		color:#fff !important;
+	}
+	.sidebar-nav a.has-submenu {
+		padding-right:23px;
 	}
 	/* add some text indentation for the 2+ level sub menu items */
-	.sm-clean ul a {
+	.sidebar-nav ul a {
 		border-left:8px solid transparent;
 	}
-	.sm-clean ul ul a {
+	.sidebar-nav ul ul a {
 		border-left:16px solid transparent;
 	}
-	.sm-clean ul ul ul a {
+	.sidebar-nav ul ul ul a {
 		border-left:24px solid transparent;
 	}
-	.sm-clean ul ul ul ul a {
+	.sidebar-nav ul ul ul ul a {
 		border-left:32px solid transparent;
 	}
-	.sm-clean ul ul ul ul ul a {
+	.sidebar-nav ul ul ul ul ul a {
 		border-left:40px solid transparent;
 	}
 
@@ -608,26 +176,12 @@ ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 /* Sub menu indicators
 ===================*/
 
-	.sm-clean a span.sub-arrow,
-	.sm-clean ul a span.sub-arrow {
-		top:50%;
-		margin-top:-9px;
+	.sidebar-nav a span.sub-arrow {
 		right:auto;
-		left:6px;
-		margin-left:0;
-		width:17px;
-		height:17px;
-		font:normal 16px/16px monospace !important;
-		text-align:center;
-		border:0;
-		text-shadow:none;
-		background:rgba(255,255,255,0.6);
-		-moz-border-radius:50px;
-		-webkit-border-radius:50px;
-		border-radius:50px;
+		margin-left:-14px;
 	}
 	/* Hide sub indicator when item is expanded - we enable the item link when it's expanded */
-	.sm-clean a.highlighted span.sub-arrow {
+	.sidebar-nav a.highlighted span.sub-arrow {
 		display:none !important;
 	}
 
@@ -635,389 +189,17 @@ ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 /* Items separators
 ===================*/
 
-	.sm-clean li {
-		border-top:1px solid rgba(0,0,0,0.05);
+	.sidebar-nav li {
+		border-left:0;
+		border-top:1px solid rgba(0,0,0,0.05) !important;
 	}
-	.sm-clean > li:first-child {
-		border-top:0;
+	.sidebar-nav li:first-child {
+		border-top:0 !important;
 	}
 
 }
 
-
-
-#wrapper {
-    padding-left: 70px;
-    transition: all .4s ease 0s;
-    height: 100%
-}
-
-#navbar-top {
-    margin-left: 70px;
-    transition: all .4s ease 0s;
-}
 
 #sidebar-wrapper {
-    margin-left: -200px;
-    left: 70px;
-    width: 200px;
-    background: #002233;
-    position: fixed;
-    height: 100%;
-    z-index: 10000;
-    transition: all .4s ease 0s;
+    width: 150px;
 }
-
-.sidebar-nav {
-    display: block;
-    float: left;
-    width: 200px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#wrapper.active {
-    padding-left: 200px;
-}
-
-#wrapper.active #navbar-top {
-    margin-left: 200px;
-}
-
-#wrapper.active #sidebar-wrapper {
-    left: 200px;
-}
-
-#sidebar_menu li a, .sidebar-nav li a{
-    color: #fff;
-    display: block;
-    float: left;
-    text-decoration: none;
-    width: 200px;
-    /*border-top: 1px solid #373737;
-    border-bottom: 1px solid #1A1A1A;*/
-    -webkit-transition: background .5s;
-    -moz-transition: background .5s;
-    -o-transition: background .5s;
-    -ms-transition: background .5s;
-    transition: background .5s;
-}
-
-.sidebar-nav-bottom {
-    position: absolute;
-    bottom: 0;
-}
-.sidebar-nav li {
-    width: 200px;
-    background: #002233;
-    line-height: 60px;
-    text-indent: 20px;
-}
-
-.sidebar-nav li a {
-  color: #DDDDFF;
-  display: block;
-  text-decoration: none;
-}
-
-#wrapper.active .sidebar-nav li a {
-    color: #fff;   
-}
-
-.sidebar-nav li a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  text-decoration: none;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    margin: 3px 0;
-    height: 65px;
-    line-height: 60px;
-    font-size: 18px;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-
-#main_icon
-{
-    float:right;
-    font-size: 20px;
-    padding-right: 65px;
-    padding-top:18px;
-}
-.sub_icon
-{
-    float:right;
-    font-size: 18px;
-    padding-right: 65px;
-    padding-top:20px;
-}
-
-/* @group Tooltip */
-#wrapper.active .sidebar-tooltip {
-    display: none;
-}
-.sidebar-tooltip .tooltip {
-    font-size: 18px;
-}
-.sidebar-tooltip .tooltip-inner {
-    padding: 5px 15px;
-    background-color: #001133;
-}
-/* @end */
-
-/* @end */
-
-/* @group Login */
-
-.account-wall {
-    max-width: 360px;
-    margin: 0 auto;
-}
-
-.form-signin
-{
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-}
-.form-signin .form-signin-heading, .form-signin .checkbox
-{
-    margin-bottom: 10px;
-}
-.form-signin .checkbox
-{
-    font-weight: normal;
-}
-.form-signin .form-control
-{
-    position: relative;
-    font-size: 16px;
-    height: auto;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.form-signin .form-control:focus
-{
-    z-index: 2;
-}
-.form-signin input[type="text"]
-{
-    margin-bottom: -1px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.form-signin input[type="password"]
-{
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-.account-wall
-{
-    margin-top: 20px;
-    padding: 40px 0px 20px 0px;
-    background-color: #f7f7f7;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-.login-title
-{
-    color: #555;
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
-}
-.profile-img
-{
-    width: 96px;
-    height: 96px;
-    margin: 0 auto 10px;
-    display: block;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-.need-help
-{
-    margin-top: 10px;
-}
-.new-account
-{
-    display: block;
-    margin-top: 10px;
-}
-
-/* @end */
-
-#content {
-    padding-top: 50px;
-    margin-left: 0;
-    max-width: 100%;
-}
-
-.contained {
-    background: #fff;
-    padding: 15px 15px;
-    margin-bottom: 30px;
-    position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-    box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-}
-
-/* @group post */
-
-/* @group post-list */
-
-.post-list-wrapper {
-    padding: 0 15px;
-}
-
-.posts-list>li {
-    list-style-type: none;
-    padding: 15px;
-    padding-left: 15px;
-    border-top: 1px solid #edeff0;
-    padding-right: 15px;
-}
-.post-list .row {
-}
-.posts-list .post-meta {
-    padding: 0px 0 0 70px;
-}
-
-.posts-list .avatar {
-    float: left;
-    margin: 0 0px 0 -75px;
-}
-
-.posts-list .post-meta h2 {
-    font-weight: bold;
-    font-size: 16px;
-    padding-top: 5px;
-    margin-bottom: 7px;
-    line-height: 1.2;
-}
-
-.posts-list .post-meta p {
-    font-size: 13px;
-    color: #b2bac2;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.posts-list .reply-count {
-    padding-top: 5px;
-    text-align: center;
-    float: right;
-    margin-left: 30px;
-}
-
-/* @end */
-
-/* @group post-body */
-
-.post-content-wrapper {
-    padding: 0 15px;
-}
-
-.post-content {
-    padding-left: 75px;
-}
-
-.post-content .avatar {
-    float: left;
-    margin-left: -75px;
-}
-
-.post-content h1 {
-    font-weight: bold;
-    font-size: 24px;
-    color: #384047;
-    line-height: 1.2;
-    margin-bottom: 5px;
-    display: block;
-}
-
-.post-content .post-meta {
-    padding: 0;
-    margin: 0;
-}
-
-.post-content .post-meta li {
-    list-style: none;
-    display: inline;
-    padding: 0 7px;
-    margin: 0;
-}
-
-.post-content .post-meta li a {
-    padding-left: 7px;
-}
-
-.post-content article p {
-    margin-top: 0.7em;
-}
-/* @end */
-
-/* @group post-comment */
-
-.post-comment-wrapper {
-    padding: 0 15px;
-}
-
-.post-comment { 
-    list-style: none;   
-}
-
-.post-comment li {
-    padding: 20px 0 20px 75px;
-    margin-top: 20px;
-    border-top: 1px solid #edeff0;    
-}
-
-.post-comment-wrapper>.post-comment>li:first-child { 
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
-}
-
-.post-comment .avatar {
-    float: left;
-    margin-left: -75px;
-}
-
-.post-comment .post-comment-meta {
-    padding: 0;
-    margin: 0;
-}
-
-.post-comment article p {
-    margin-top: 0.7em;
-}
-/* @end */
-
-/* @end */
-
-/* @group Control */
-
-/* @end */

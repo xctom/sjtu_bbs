@@ -393,6 +393,7 @@ body {
 }
 #login input, #login button {
     box-shadow:0 0 45px black;
+    text-align: center;
     background: none;
     color: white;
     font-weight: bold;
@@ -427,6 +428,9 @@ body {
 /* @end */
 
 /* @group Sidebar */
+
+/* @group Resonsive */
+
 #wrapper {
     padding-left: 70px;
     transition: all .4s ease 0s;
@@ -487,79 +491,132 @@ body {
     left: 200px;
 }
 
-#sidebar_menu li a, .sidebar-nav li a{
-    color: #fff;
-    display: block;
-    float: left;
-    text-decoration: none;
-    width: 200px;
-    /*border-top: 1px solid #373737;
-    border-bottom: 1px solid #1A1A1A;*/
-    -webkit-transition: background .5s;
-    -moz-transition: background .5s;
-    -o-transition: background .5s;
-    -ms-transition: background .5s;
-    transition: background .5s;
-}
-
-.sidebar-nav-bottom {
-    position: absolute;
-    bottom: 0;
-}
-.sidebar-nav li {
-    width: 200px;
-    background: #002233;
-    line-height: 60px;
-    text-indent: 20px;
-}
-
-.sidebar-nav li a {
-  color: #DDDDFF;
-  display: block;
-  text-decoration: none;
-}
-
 #wrapper.active .sidebar-nav li a {
     color: #fff;   
 }
 
-.sidebar-nav li a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  text-decoration: none;
-}
+/* @end */
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
+/* @group Layout */
+/*
+---------------------------------------------------------------
+  Note that styles you apply to the main menu items are inherited by the sub menus items too.
+  If you'd like to avoid this, you could use child selectors (not supported by IE6) - for example:
+  .sidebar-nav > li > a { ... } instead of .sidebar-nav a { ... }
+---------------------------------------------------------------*/
 
-.sidebar-nav > .sidebar-brand {
-    margin: 3px 0;
-    height: 65px;
-    line-height: 60px;
-    font-size: 18px;
-}
 
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
+/* Menu box
+===================*/
 
-#main_icon
-{
-    float:right;
-    font-size: 20px;
-    padding-right: 65px;
-    padding-top:18px;
-}
-.sub_icon
-{
-    float:right;
-    font-size: 18px;
-    padding-right: 65px;
-    padding-top:20px;
-}
+	.sidebar-nav,
+	.sidebar-nav ul {
+		background: #002233;
+	}
+     .sidebar-nav-bottom {
+         position: absolute;
+         bottom: 0;
+     }
+
+/* Menu items
+===================*/
+    .sidebar-nav li {
+        width: 200px;
+        background: #002233;
+        line-height: 60px;
+        text-indent: 20px;
+    }
+    .sidebar-nav .sidebar-brand {
+        margin: 3px 0;
+        height: 65px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+	.sidebar-nav a {
+		color: #DDDDFF;
+		text-decoration:none;
+	}
+	.sidebar-nav span.sub_icon {
+        float:right;
+        font-size: 18px;
+        padding-right: 45px;
+        padding-top:20px;
+	}
+    .sidebar-nav span.main_icon {
+        float:right;
+        font-size: 20px;
+        padding-right: 45px;
+        padding-top:18px;
+    }
+	.sidebar-nav a:hover, .sidebar-nav a:focus, .sidebar-nav a:active,
+	.sidebar-nav a.highlighted {
+		color: #fff;
+		background: rgba(255,255,255,0.2);
+	}
+
+	.sidebar-nav a.has-submenu {
+		padding-right:32px;
+	}
+ 	.sidebar-nav ul a.has-submenu,
+	.sidebar-nav-vertical a.has-submenu {
+		padding-right:23px;
+	}
+
+
+/* Sub menu indicators
+===================*/
+
+	.sidebar-nav a span.sub-arrow {
+		position:absolute;
+		right:12px;
+		top:50%;
+		margin-top:-8px;
+		width:16px;
+		height:16px;
+		line-height:16px;
+	}
+ 	.sidebar-nav ul a span.sub-arrow,
+	.sidebar-nav-vertical a span.sub-arrow {
+		right:auto;
+		margin-left:-14px;
+	}
+
+
+
+/* Scrolling arrows containers for tall sub menus - test sub menu: "Sub test" -> "more..." -> "more..." in the default download package
+===================*/
+
+	.sidebar-nav span.scroll-up, .sidebar-nav span.scroll-down {
+		position:absolute;
+		display:none;
+		visibility:hidden;
+		overflow:hidden;
+		background:#002233;
+		height:20px;
+		/* width and position will be automatically set by the script */
+	}
+	.sidebar-nav span.scroll-up-arrow, .sidebar-nav span.scroll-down-arrow {
+		position:absolute;
+		top:-2px;
+		left:50%;
+		margin-left:-8px;
+		/* we will use one-side border to create a triangle so that we don't use a real background image, of course, you can use a real image if you like too */
+		width:0;
+		height:0;
+		overflow:hidden;
+		border-width:8px; /* tweak size of the arrow */
+		border-style:dashed dashed solid dashed;
+		border-color:transparent transparent white transparent;
+	}
+	.sidebar-nav span.scroll-down-arrow {
+		top:6px;
+		border-style:solid dashed dashed dashed;
+		border-color:white transparent transparent transparent;
+	}
+
+
+
+/* @end */
 
 /* @group Tooltip */
 #wrapper.active .sidebar-tooltip {
@@ -576,6 +633,31 @@ body {
 
 /* @end */
 
+#content {
+    padding-top: 50px;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+    #content {
+        width: 100%;
+    }
+}
+.contained {
+    background: #fff;
+    padding: 15px 15px;
+    margin-bottom: 30px;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
 
 /* @group post */
 
@@ -592,8 +674,10 @@ body {
     border-top: 1px solid #edeff0;
     padding-right: 15px;
 }
-.post-list .row {
+.posts-list>li:first-child {
+    border-top: none;
 }
+
 .posts-list .post-meta {
     padding: 0px 0 0 70px;
 }

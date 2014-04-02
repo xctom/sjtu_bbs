@@ -10,10 +10,18 @@ $("#sidebar_menu-toggle").click(function(e) {
 
 //For hero 
 //For sidebar
+$('#myCarousel').carousel({
+  interval: 2000
+});
 $("#login-toggle").click(function(e) {
         e.preventDefault();
         $("#login").toggleClass("hidden");
         $("#myCarousel .carousel-inner").toggleClass("blur");
+        if($("#myCarousel .carousel-inner").hasClass("blur")){
+            $("#myCarousel").carousel('pause');
+        } else {
+            $("#myCarousel").carousel('cycle');
+        }
 });
 //For Tooltips
 $(function(){
@@ -32,15 +40,15 @@ $(function(){
 //});
 			
 //For Smartumenu 
-//$(function() {
-//     var options={
-//       keepHighlighted: false,
-//       subIndicators: false
-//     }
-//  $('#sidebar-menu').smartmenus(options);
-//});
-//
-//  $('#main-menu').smartmenus();
+$(function(){
+	var options={
+		showOnClick: true,
+		subIndicators: false,
+		keepHighlighted: false,
+		markCurrentItem: false
+	}
+	$('#main-menu').smartmenus(options);
+});
 
 //
 //For dropdown Menu 
