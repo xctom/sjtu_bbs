@@ -17,43 +17,71 @@
     <![endif]-->
   </head>
   <body>
-     <div class="hero-wrapper background">
- 
-       <div class="hero-wrapper-inner">
- 
-         <div class="cover-container">
- 
-           <div class="masthead clearfix">
-             <div class="inner">
-               <h3 class="masthead-brand">Cover</h3>
-               <ul class="nav masthead-nav">
-                 <li class="active"><a href="#">Home</a></li>
-                 <li><a href="#">Features</a></li>
-                 <li><a href="#">Contact</a></li>
-               </ul>
+    <nav class="navbar navbar-fixed-bottom navbar-default" id="navbar-hero" role="navigation">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">饮水思源</a>
+      </div>
+
+        <nav class="navbar-right">
+            <button type="button" class="btn btn-default navbar-btn" id="login-toggle">Sign in</button>
+        </nav>
+    </nav>
+    
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('https://bbs.sjtu.edu.cn/file/bbs/index/bbsweb_review/entryhtml/entrypics/1009teacher.jpg');"></div>
+                <div class="carousel-caption">
+                    <h1>图片描述1</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/2.png');"></div>
+                <div class="carousel-caption">
+                    <h1>图片描述2</h1>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h1>图片描述3</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+        
+    </div>   
+    
+     <div id="login" class="hidden">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-4 col-md-3 col-md-offset-2">
+                     <input type="text" class="form-control" placeholder="用户名">
+                 </div>
+                 <div class="col-sm-4 col-md-3">
+                      <input type="text" class="form-control" placeholder="密码"> 
+                 </div>
+                 <div class="col-sm-4 col-md-2">
+                     <button type="button" class="btn btn-default">登录</button>
+                 </div>  
              </div>
-           </div>
- 
-           <div class="inner cover">
-             <h1 class="cover-heading">Cover your page.</h1>
-             <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-             <p class="lead">
-               <a href="#" class="btn btn-lg btn-default">Learn more</a>
-             </p>
-           </div>
- 
-           <div class="mastfoot">
-             <div class="inner">
-               <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-             </div>
-           </div>
- 
          </div>
- 
-       </div>
- 
-     </div>  
-         
+     </div>
+    
+              
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

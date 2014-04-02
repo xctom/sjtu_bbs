@@ -8,6 +8,13 @@ $("#sidebar_menu-toggle").click(function(e) {
         $("#wrapper").toggleClass("active");
 });
 
+//For hero 
+//For sidebar
+$("#login-toggle").click(function(e) {
+        e.preventDefault();
+        $("#login").toggleClass("hidden");
+        $("#myCarousel .carousel-inner").toggleClass("blur");
+});
 //For Tooltips
 $(function(){
 	var options={
@@ -19,6 +26,11 @@ $(function(){
 	$(".sidebar-nav li a").tooltip(options);
 });
 
+//For dl_menu
+//$(function(){
+//	$( '#dl-menu' ).dlmenu();
+//});
+			
 //For Smartumenu 
 //$(function() {
 //     var options={
@@ -65,8 +77,8 @@ $(document).on('click', '.panel-heading', function(e){
 });
 //Show #control-wrapper on landscape
 $(document).ready(function(){
-    if($(window).width() > 992) {
-        $('#control-wrapper').addClass('in');
+    if($(window).width() < 992) {
+        $('#control-wrapper').removeClass('in');
     }
 });
 $(window).resize(function(){

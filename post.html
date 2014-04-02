@@ -38,47 +38,82 @@
         
         <div id="content" class="container">
         <nav class="navbar navbar-default navbar-fixed-top" id="navbar-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    选择讨论区
                 </button>
-                <a class="navbar-brand" href="#">饮水思源</a>
+                <div class="navbar-brand">
+                    饮水思源
+                    <span id="sidebar_menu-toggle" class="glyphicon glyphicon-align-justify"></span>      
+                </div>
             </div>
-            
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="glyphicon glyphicon-user"></i>  <i class="caret"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-            </ul>
-        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="btn-group btn-breadcrumb navbar-btn">
+                   <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>                
+                   <div class="btn-group">
+                     <button type="button" class="btn btn-default" data-toggle="dropdown">
+                       分类讨论区
+                     </button>
+                     <ul class="dropdown-menu" role="menu">
+                       <li><a href="#">BBS系统</a></li>
+                       <li><a href="#">上海交大</a></li>
+                       <li><a href="#">学子院校</a></li>
+                       <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                     </ul>
+                   </div>
+                   <div class="btn-group">
+                     <button type="button" class="btn btn-default" data-toggle="dropdown">
+                       电脑技术
+                     </button>
+                     <ul class="dropdown-menu" role="menu">
+                       <li><a href="#">BBS系统</a></li>
+                       <li><a href="#">上海交大</a></li>
+                       <li><a href="#">学子院校</a></li>
+                       <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                      <li><a href="#">电脑技术</a></li>
+                     </ul>
+                   </div>
+                  <a href="#" class="btn btn-default">讨论区</a>                
+               </div>
+           </div>
         </nav>
-            
+                    
             <div class="row">
                 <div class="col-md-3 col-md-push-9">
-                    <div class="control-wrapper">
-                        <nav class="">
-                        
-                        </nav>
+                    <div id="control"  data-toggle="collapse" data-target="#control-wrapper">
+                            <h3 class="panel-title">展开更多菜单</h3>
+                            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-down"></i></span>
                     </div>
+                    <div id="control-wrapper" class="collapse in">
+                        <div class="search-wrapper">
+                          <div class="right-inner-addon">
+                              <input type="search" class="form-control" placeholder="Search" />
+                              <span class="glyphicon glyphicon-search"></span>
+                          </div>                     
+                        </div>
+                        <div class="panel">
+                			<div class="panel-heading">
+                				<h3 class="panel-title">Panel 1</h3>
+                				<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                			</div>
+                			<div class="panel-body" style="height: 500px;">用于后期进一步的信息；如广告，全站公告，热门帖子的右侧展示等，以div.panel的形式在右边栏展示</div>
+                		</div>
+                	</div>
                 </div>
-                
-                
+                                
                 <div class="col-md-9 col-md-pull-3">
                     <div class="contained">
                         <div class="post-content-wrapper">
