@@ -12,7 +12,7 @@ Powered by dongyue web.
 __________
 \____    /
   /     / 
- /     /_ 
+ /  ___/_ 
 /_______ \
         \/
 A Zen Design. 
@@ -394,8 +394,8 @@ body {
 #login input, #login button {
     box-shadow:0 0 45px black;
     text-align: center;
-    background: none;
-    color: white;
+    background: rgba(255, 255, 255, .5);
+    color: black;
     font-weight: bold;
     border-color: white;
     border-radius: 50px;
@@ -404,6 +404,8 @@ body {
 
 #login button {
     width: 100%;
+    background-color: white;
+    color: black;
 }
 
 /* @end */
@@ -451,6 +453,10 @@ body {
     height: 100%;
     z-index: 10000;
     transition: all .4s ease 0s;
+}
+
+#wrapper:not(.active) #sidebar-wrapper.trans {
+    background: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -511,7 +517,6 @@ body {
 
 	.sidebar-nav,
 	.sidebar-nav ul {
-		background: #002233;
 	}
      .sidebar-nav-bottom {
          position: absolute;
@@ -523,8 +528,12 @@ body {
     .sidebar-nav li {
         width: 200px;
         background: #002233;
+        transition: all .4s ease 0s;
         line-height: 60px;
         text-indent: 20px;
+    }
+    #wrapper:not(.active) #sidebar-wrapper.trans .sidebar-nav li {
+        background: none;
     }
     .sidebar-nav .sidebar-brand {
         margin: 3px 0;
@@ -536,6 +545,7 @@ body {
 		color: #DDDDFF;
 		text-decoration:none;
 	}
+	
 	.sidebar-nav span.sub_icon {
         float:right;
         font-size: 18px;
@@ -553,7 +563,10 @@ body {
 		color: #fff;
 		background: rgba(255,255,255,0.2);
 	}
-
+    .sidebar-nav a.current, .sm-simple a.current:hover, .sm-simple a.current:focus, .sm-simple a.current:active {
+    	background: rgba(255,255,255,0.2);
+    	color: #fff;
+    }
 	.sidebar-nav a.has-submenu {
 		padding-right:32px;
 	}
@@ -660,6 +673,107 @@ body {
 }
 
 /* @group post */
+
+/* @group topten */
+#topten {
+    position: absolute;
+    left: 0;
+    background: #003366;
+    height: 100%;
+    width: 100%;
+}
+
+#topten > .container {
+    height: 100%;
+}
+
+#topten .topten-header {
+    font-size: 125px;
+    text-align: center;
+    margin-top: 200px;
+    line-height: 125px;
+    color: white;
+}
+
+@media screen and ( max-width: 768px) {
+    #topten {
+        padding-left: 0;
+    }
+}
+
+@media screen and ( min-width: 990px) {
+    #topten .topten-header {
+        font-size: 125px;
+        text-align: center;
+        margin-top: 200px;
+        line-height: 125px;
+        transform:rotate(-7deg);
+        -ms-transform:rotate(-7deg); 	/* IE 9 */
+        -moz-transform:rotate(-7deg); 	/* Firefox */
+        -webkit-transform:rotate(-7deg); /* Safari 和 Chrome */
+        -o-transform:rotate(-7deg);
+    }
+}
+
+@media screen and ( max-width: 990px) {
+    #topten .topten-header {
+        margin-top: 50px;
+    }
+}
+
+@media screen and ( max-width: 768px) {
+    #topten .topten-header {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 30px;        
+    }
+}
+
+
+#topten .topten-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid #003366;
+}
+#topten .topten-item h1 {
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) {
+    #topten .topten-list {
+        margin-top: 100px;
+    }
+}
+
+@media  screen and ( min-width: 1200px) {
+    #topten .topten-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #topten .topten-item h1 {
+        white-space: normal;
+        width: 18px;
+        font-size: 18px;
+        line-height: 18px;
+        word-wrap:break-word;
+        word-break:nomal;
+        height: 500px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+#topten .topten-item {
+    
+}
+/* @end */
 
 /* @group post-list */
 

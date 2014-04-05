@@ -44,7 +44,6 @@ $(function(){
 	var options={
 		showOnClick: true,
 		subIndicators: false,
-		keepHighlighted: false,
 		markCurrentItem: false
 	}
 	$('#main-menu').smartmenus(options);
